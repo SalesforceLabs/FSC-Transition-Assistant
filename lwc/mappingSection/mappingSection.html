@@ -1,0 +1,83 @@
+<!-- Component that represents a section of mappingRow's. To be used within individual assessment screens. -->
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+    </template>
+    <div>
+        <div class="sectionInfo">
+            <div class="sectionHeader slds-text-heading_medium">
+                <p>{sectionHeaderText}</p>
+            </div>
+            <div class="sectionDescription slds-text-heading_small slds-truncate">
+                <p><lightning-formatted-rich-text value={sectionDescription}></lightning-formatted-rich-text></p>
+                <template if:true={hasAdditionalInfo}>
+                    <br/>
+                    <p style="display: flex; align-items: center;"><lightning-icon class="infoIcon" icon-name="utility:warning" size="medium"></lightning-icon><lightning-formatted-rich-text class="wrappedText" value={additionalInfo}></lightning-formatted-rich-text></p>
+                </template>
+            </div>
+        </div>
+        
+        <template for:each={mappingData} for:item="objectRow" for:index="objectIndex">
+            <div key={objectRow.destination} class="rowContainer">
+                <!-- <c-mapping-row mapping-info={objectRow} row-index={objectIndex} org-schema={orgSchema} onsourceselect={sourceselected} hide-details></c-mapping-row> -->
+                <div class="objectRow">
+                    <!-- Object Selection -->
+                    <lightning-layout class="sectionLayout" multiple-rows="true">
+                        <!-- Header -->
+                        <lightning-layout-item size="5">
+                            <strong>{label.MappingObjectSource}</strong>
+                        </lightning-layout-item>
+                        <lightning-layout-item size="2">
+                            
+                        </lightning-layout-item>
+                        <lightning-layout-item size="5">
+                            <strong>{label.MappingObjectDest}</strong>
+                        </lightning-layout-item>
+                        
+                        <!-- Selection -->
+                        <lightning-layout-item class="rowItem" size="5">
+                            <lightning-combobox
+                                class="rowSelect"
+                                data-index={objectIndex}
+                                data-level="object"
+                                data-type="source"
+                                name="orgSchema"
+                                label={label.MappingObjectSource}
+                                value={objectRow.source}
+                                options={orgSchema}
+                                onchange={selectRow}
+                                placeholder="-- None --"
+                                variant="label-hidden">
+                            </lightning-combobox>
+                        </lightning-layout-item>
+                        <lightning-layout-item class="rowItem" size="2">
+                            <lightning-icon class="mapIcon" icon-name="utility:forward"></lightning-icon>
+                        </lightning-layout-item>
+                        <lightning-layout-item class="rowItem" size="5">
+                            <lightning-combobox
+                                class="rowSelect"
+                                data-level="object"
+                                data-type="destination"
+                                disabled
+                                name="fscSchema"
+                                label={label.MappingObjectDest}
+                                onchange={selectRow}
+                                placeholder={objectRow.label}
+                                value={objectRow.destination}
+                                variant="label-hidden">
+                            </lightning-combobox>
+                        </lightning-layout-item>
+                    </lightning-layout>
+                    <!-- END Object Selection-->
+                </div>
+            </div>
+        </template>
+
+        <div class="questionFooter">
+            <lightning-button label={label.UIBackButtonText} class="slds-button" variant="brand" onclick={goPrevious}></lightning-button>
+            <lightning-button label={label.UINextButtonText} class="slds-button" variant="brand" onclick={submitMapping}></lightning-button>
+            <lightning-button label={label.UICancelButtonText} class="slds-button" onclick={cancelAssessment}></lightning-button>
+        </div>
+        
+    </div>
+</template>

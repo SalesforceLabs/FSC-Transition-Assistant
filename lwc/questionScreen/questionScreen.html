@@ -1,0 +1,71 @@
+<template>
+    <template if:true={showVerticals}>
+        <div>
+            <br/><br/>
+            <lightning-formatted-rich-text value={label.UIOptionalDisclaimer}></lightning-formatted-rich-text>
+            <br/><br/>
+            <template for:each={verticalList} for:item="vertical" for:index="index">
+                <lightning-card class="verticalCard" key={vertical.VerticalId} title={vertical.Name} icon-name={vertical.Icon} variant="narrow">
+                    <lightning-input type="toggle" slot="actions" label="" value={vertical.VerticalSelected} message-toggle-active="Yes"  message-toggle-inactive="No" data-index={index} onchange={handleVerticalSelection}></lightning-input>
+                    <p class="slds-p-horizontal_small">{vertical.Description}</p>        
+                </lightning-card>
+                <br key={vertical.VerticalId}/>
+            </template>
+            <div class="questionFooter">
+                <template if:true={showStart}>
+                    <lightning-button
+                        class="slds-button startButton"
+                        variant="neutral"
+                        label={label.UIStartAssessmentText}
+                        onclick={startAssessment}>
+                    </lightning-button>
+                </template>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showQuestion}>
+        <div>
+            <br/><br/>
+            <p class="slds-text-body_regular" style="margin-bottom: 1.5rem; margin-top: 1rem;">{label.UIQuestionDesc}</p>
+            <div class="questionDiv">
+                <h2 class="slds-card__header-title">{question.QuestionText}</h2>
+                <template if:true={question.HasError}>
+                    <p key={question.QuestionId} class="slds-p-horizontal_small error-message">{question.ErrorMessage}</p>
+                </template>
+                <p class="slds-p-horizontal_small">
+                    <template if:true={question.IsCheckBox}>
+                        <template if:true={question.SelectedCheckbox}>
+                            <lightning-input type="toggle" label="" value={question.SelectedCheckbox} message-toggle-active="Yes"  message-toggle-inactive="No" data-index=0 onchange={handleToggle} checked></lightning-input>
+                        </template>
+                        <template if:false={question.SelectedCheckbox}>
+                            <lightning-input type="toggle" label="" value={question.SelectedCheckbox} message-toggle-active="Yes"  message-toggle-inactive="No" data-index=0 onchange={handleToggle}></lightning-input>
+                        </template>
+                    </template>
+                    <template if:true={question.IsPicklist}>
+                        <lightning-combobox label="" value={question.SelectedAnswer} placeholder={label.UIPicklistPlaceholderText} options={question.AnswerValues} onchange={handleCombobox} data-index={index}></lightning-combobox>
+                    </template>
+                    <template if:true={question.IsMultiSelect}>
+                        <lightning-checkbox-group label="" value={question.SelectedAnswers} options={question.AnswerValues} onchange={handleCheckboxGroup} data-index={index}></lightning-checkbox-group>
+                    </template>
+                </p>
+            </div>
+
+            <div class="questionFooter">
+                <template if:true={showBack}>
+                    <lightning-button label={label.UIBackButtonText} class="slds-button" variant="brand" onclick={prevQuestion}></lightning-button>
+                </template>
+                <template if:true={showNext}>
+                    <lightning-button label={label.UINextButtonText} class="slds-button" variant="brand" onclick={submitQuestion}></lightning-button>
+                </template>
+                <lightning-button label={label.UICancelButtonText} class="slds-button" onclick={cancelAssessment}></lightning-button>
+            </div>
+            
+        </div>
+    </template>
+
+    <template if:true={showMapping}>
+        <br/><br/>
+        <c-mapping-section assessment-id={assessmentid} mapping-id={currentMappingId} start-at-end={startAtEndOfMap} index-override={overrideMappingIndex} previous-question={question} oncloseassessment={cancelAssessment} onnextquestion={nextQuestionFromMapping} ongoback={previousQuestionFromMapping} fsc-defs={fscDefs}></c-mapping-section>
+    </template>
+</template>

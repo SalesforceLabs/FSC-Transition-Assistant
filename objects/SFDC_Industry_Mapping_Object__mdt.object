@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Standard and Custom objects that exist in the SFDC Industries package that the subscriber org is transitioning to</description>
+    <fields>
+        <fullName>Description_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A reference to the Custom Label that houses this object&apos;s description.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A reference to the Custom Label that houses this object&apos;s description.</inlineHelpText>
+        <label>Description Label</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enabled__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If unchecked, skips this object for mapping.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If unchecked, skips this object for mapping.</inlineHelpText>
+        <label>Enabled</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Hidden_Record_Types__c</fullName>
+        <deprecated>false</deprecated>
+        <description>If populated, indicates the record types that should be hidden from the user during mapping.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If populated, indicates the record types that should be hidden from the user during mapping.</inlineHelpText>
+        <label>Hidden Record Types</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Index__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The order in which this object should show within the mapping screen. (Lower numbers show first)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The order in which this object should show within the mapping screen. (Lower numbers show first)</inlineHelpText>
+        <label>Index</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mapping_Section__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Which mapping screen this object should be shown on (If none specified, this object will only be shown on the final mapping screen).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Which mapping screen this object should be shown on (If none specified, this object will only be shown on the final mapping screen).</inlineHelpText>
+        <label>Mapping Section</label>
+        <referenceTo>SFDC_Industry_Mapping_Section__mdt</referenceTo>
+        <relationshipLabel>SFDC Industry Mapping Objects</relationshipLabel>
+        <relationshipName>SFDC_Industry_Mapping_Objects</relationshipName>
+        <required>false</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Object API Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SFDC Industry Mapping Object</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Index__c</columns>
+        <columns>Enabled__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Mappings</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Enabled__c</columns>
+        <columns>Mapping_Section__c</columns>
+        <columns>Object_API_Name__c</columns>
+        <columns>Description_Label__c</columns>
+        <columns>Index__c</columns>
+        <columns>Hidden_Record_Types__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Mappings</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>SFDC Industry Mapping Objects</pluralLabel>
+    <visibility>Protected</visibility>
+</CustomObject>

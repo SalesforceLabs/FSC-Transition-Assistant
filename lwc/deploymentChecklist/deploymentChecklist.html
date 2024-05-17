@@ -1,0 +1,34 @@
+<template>
+    <lightning-card icon-name="standard:multi_select_checkbox" title={label.deploymentChecklistTitle}>
+        <template if:true={isLoading}>
+            <div class="loadingContainer">
+                <div class="slds-text-heading_large">{statusMessage}</div>
+                <div if:false={statusMessage} class="slds-text-heading_small" style="margin-top: .5rem;">{label.loadingText}</div>
+                <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand" style="margin-top: 1.0rem;">
+                    <span class="slds-assistive-text">{label.loadingText}</span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </template>
+
+        <template if:false={isLoading}>
+            <p class="slds-text-body_regular slds-p-around_small">{label.deploymentChecklistDescription}</p>
+            <template for:each={deploymentSections} for:item="deploymentSection">
+                <c-deployment-checklist-section key={deploymentSection.sectionName}
+                    section-label={deploymentSection.sectionLabel}
+                    section-name={deploymentSection.sectionName}
+                    section-data={deploymentSection.components}
+                    columns={checklistColumns}
+                    onrowselection={rowSelected}>
+                </c-deployment-checklist-section>
+            </template>
+        </template>
+
+        <div slot="footer">
+            <template if:false={isLoading}>
+                <lightning-button label={label.buttonLabelGenerateDeploymentPackage} variant="brand" onclick={generatePackage}></lightning-button>
+            </template>
+        </div>
+    </lightning-card>
+</template>

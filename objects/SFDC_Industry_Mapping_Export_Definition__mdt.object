@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains the column configuration for exported .xlsx mapping files.</description>
+    <fields>
+        <fullName>Index__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The order in which this column should appear.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The order in which this column should appear.</inlineHelpText>
+        <label>Index</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Label_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the custom label for this column.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the custom label for this column.</inlineHelpText>
+        <label>Label Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wrapper_Attribute_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the field from the respective wrapper object to grab data from.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the field from the respective wrapper object to grab data from.</inlineHelpText>
+        <label>Wrapper Attribute Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wrapper_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Which wrapper object the data for this column exists</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Which wrapper object the data for this column exists</inlineHelpText>
+        <label>Wrapper Object</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Object-Level</fullName>
+                    <default>true</default>
+                    <label>Object-Level</label>
+                </value>
+                <value>
+                    <fullName>Field-Level</fullName>
+                    <default>false</default>
+                    <label>Field-Level</label>
+                </value>
+                <value>
+                    <fullName>Field-Level (New Field Details)</fullName>
+                    <default>false</default>
+                    <label>Field-Level (New Field Details)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>SFDC Industry Mapping Export Definition</label>
+    <listViews>
+        <fullName>All_Columns</fullName>
+        <columns>Index__c</columns>
+        <columns>MasterLabel</columns>
+        <columns>Label_Name__c</columns>
+        <columns>Wrapper_Object__c</columns>
+        <columns>Wrapper_Attribute_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Columns</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>SFDC Industry Mapping Export Definitions</pluralLabel>
+    <visibility>Protected</visibility>
+</CustomObject>

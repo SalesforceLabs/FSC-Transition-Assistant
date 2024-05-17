@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title={sectionLabel}>
+        <div class="slds-scrollable_y" style="max-height: 800px;">
+            <lightning-datatable 
+                key-field="componentId" 
+                columns={columns} 
+                data={sectionData}
+                onsort={updateColumnSorting} 
+                selected-rows={selectedChecklistRows} 
+                onrowselection={rowSelected}
+                hide-checkbox-column={hideSelection} 
+                sorted-by={sortedBy} 
+                sorted-direction={sortDirection}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

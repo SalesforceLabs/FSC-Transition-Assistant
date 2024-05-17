@@ -1,0 +1,103 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+    </template>
+    <!-- Header Title -->
+    <div class="slds-trial-header"
+        style="align-items: center; display: flex; flex-direction: row; justify-content: space-between; padding: 2rem 1rem;">
+        <h1 class="slds-text-heading_large">{name}</h1>
+
+            <div style="margin-left: auto">
+                <template if:true={shouldShowMappingDocButtons}>
+                    <lightning-button slot="actions" label="Export Mapping (.xlsx)" variant="brand-outline" icon-position="right" onclick={exportDoc}></lightning-button>
+                </template>
+                <lightning-button slot="actions" label="Download Report (.pdf)" variant="brand-outline" icon-position="right" onclick={downloadPdf}></lightning-button>
+            </div>
+            <!-- <template if:true={xlsxLink}>
+                <div style="color: white; margin-left: .5rem;">
+                    <lightning-button-icon class='slds-button_icon-current-color slds-current-color iconWhite' icon-name="utility:link"  alternative-text={label.copyLinkMessage} title={label.copyLinkMessage} onclick={copyDocLink} variant="bare"></lightning-button-icon>
+                </div>
+            </template> -->
+
+        <!-- <lightning-button slot="actions" label="Generate PDF" variant="brand-outline" icon-position="right"
+            icon-name="utility:file"></lightning-button> -->
+    </div>
+
+    <!-- Header Info Columns -->
+    <lightning-layout multiple-rows="true">
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelDate}</label>
+                <div class="slds-form-element__control">
+                    <lightning-formatted-date-time value={createddate}></lightning-formatted-date-time>
+                </div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelCreatedBy}</label>
+                <div class="slds-form-element__control">
+                    <a title={createdby.name} data-record-id={createdby.id} onclick={navigateToRecord}>{createdby.name}</a>
+                </div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelOrgId}</label>
+                <div class="slds-form-element__control">{results.orgId}</div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelOrgType}</label>
+                <div class="slds-form-element__control">{results.orgEdition}</div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelVersion}</label>
+                <div class="slds-form-element__control">{results.assessmentVersion}</div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <div class="slds-form-element_stacked">
+                <label class="slds-text-heading_small">{label.headerLabelUpgradeType}</label>
+                <div class="slds-form-element__control">{results.upgradeType}</div>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <template if:true={results.installReadiness.isOrgInstallationReady}>
+                <lightning-icon icon-name="utility:check" size="small" variant="success"
+                    alternative-text={label.headerLabelReadyToUpgradeYes} title={label.headerLabelReadyToUpgradeYes}>
+                </lightning-icon>
+            </template>
+            <template if:false={results.installReadiness.isOrgInstallationReady}>
+                <lightning-icon icon-name="utility:close" size="small" variant="error"
+                    alternative-text={label.headerLabelReadyToUpgradeNo} title={label.headerLabelReadyToUpgradeNo}>
+                </lightning-icon>
+            </template>
+            <label class="slds-text-heading_small">{label.headerLabelReadyToUpgrade}</label>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4"
+            large-device-size="2">
+            <template if:true={results.installReadiness.isLicensesAvailable}>
+                <lightning-icon icon-name="utility:check" size="small" variant="success"
+                    alternative-text={label.headerLabelReadyToUpgradeYes} title={label.headerLabelReadyToUpgradeYes}>
+                </lightning-icon>
+            </template>
+            <template if:false={results.installReadiness.isLicensesAvailable}>
+                <lightning-icon icon-name="utility:close" size="small" variant="error"
+                    alternative-text={label.headerLabelReadyToUpgradeNo} title={label.headerLabelReadyToUpgradeNo}>
+                </lightning-icon>
+            </template>
+            <label class="slds-text-heading_small">{label.headerLabelLicensesPurchased}</label>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

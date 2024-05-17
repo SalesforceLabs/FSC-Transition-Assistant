@@ -1,0 +1,11 @@
+.checkboxInput {
+    padding: .5rem 0;
+}
+
+.checkboxDiv {
+    display: flex;
+}
+
+.summaryDiv {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,149 @@
+<template>
+    <div>
+        <template if:true={isLoading}>
+            <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="installSpinnerContainer">
+                        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                            <span class="slds-assistive-text">{label.UIPackageTableLoadingText}</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div> 
+                </div>
+            </article>    
+        </template>
+        <template if:false={isLoading}>
+            <template if:true={showPendingTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="custom:custom44" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIPackageTableInstallingHeader}</span>
+                                </h2>
+                            </div>
+                            <div class="slds-no-flex">
+                                <div class="slds-align_absolute-center">
+                                    <div role="status" class="slds-spinner slds-spinner_small slds-spinner_inline slds-spinner_brand spinner-align">
+                                      <div class="slds-spinner__dot-a"></div>
+                                      <div class="slds-spinner__dot-b"></div>
+                                    </div>
+                                  </div>                    
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIPackageTableInstallingDescription}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="VersionId" data={pendingPackageList} columns={columns} hide-checkbox-column></c-assessment-datatable>
+                        </article>
+                    </div>
+                </article>
+            </template>
+            <template if:true={showErrorTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="custom:custom67" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIPackageTableErrorHeader}</span>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIPackageTableErrorDescription}></lightning-formatted-rich-text><lightning-formatted-rich-text value={installResult.error}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="VersionId" data={errorPackageList} columns={columns} hide-checkbox-column></c-assessment-datatable >
+                        </article>
+                    </div>
+                </article>
+            </template>
+            <template if:false={showPendingTable}>
+                <template if:true={showRecommendedTable}>
+                    <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <lightning-icon class="slds-icon_container" icon-name="standard:settings" size="small"></lightning-icon>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.UIPackageTableHeaderText}</span>
+                                    </h2>
+                                </div>
+                                <div class="slds-no-flex">
+                                    <template if:true={buttonActive}>
+                                        <lightning-button label={label.UIPackageTableButtonText} slot="actions" variant="brand" onclick={installPackages}></lightning-button>
+                                    </template>
+                                    <template if:false={buttonActive}>
+                                        <lightning-button label={label.UIPackageTableButtonText} slot="actions" variant="brand" disabled="true"></lightning-button>
+                                    </template>                           
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIPackageTableDescriptionText}></lightning-formatted-rich-text></p>
+                            <article class="slds-card slds-card_boundary slds-is-relative">
+                                <c-assessment-datatable key-field="VersionId" data={uninstalledPackageList} columns={columns} onrowselection={getSelectedPackages} selected-rows={preSelectedPackages}></c-assessment-datatable>
+                            </article>
+                        </div>
+                    </article>
+                </template>
+            </template>
+            <template if:true={showPendingTable}>
+                <template if:true={showRecommendedTable}>
+                    <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <lightning-icon class="slds-icon_container" icon-name="standard:settings" size="small"></lightning-icon>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.UIPackageTableRecommendedHeader}</span>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIPackageTableRecommendedDescription}></lightning-formatted-rich-text></p>
+                            <article class="slds-card slds-card_boundary slds-is-relative">
+                                <c-assessment-datatable  key-field="VersionId" data={uninstalledPackageList} columns={columns} hide-checkbox-column></c-assessment-datatable>
+                            </article>
+                        </div>
+                    </article>
+                </template>
+            </template>
+            <template if:true={showInstalledTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="standard:task2" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIPackageTableInstalledHeader}</span>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIPackageTableInstalledDescription}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="VersionId" data={installedPackageList} columns={columns} hide-checkbox-column></c-assessment-datatable >
+                        </article>
+                    </div>
+                </article>
+            </template>
+        </template>
+    </div>
+</template>

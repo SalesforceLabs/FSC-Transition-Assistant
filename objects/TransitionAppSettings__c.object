@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Collapse_Welcome_Section_By_Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, collapses the &quot;Welcome&quot; section of the Assessment report, and allows the user to see the report results right away.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, collapses the &quot;Welcome&quot; section of the Assessment report, and allows the user to see the report results right away.</inlineHelpText>
+        <label>Collapse Welcome Section By Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Transition App Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

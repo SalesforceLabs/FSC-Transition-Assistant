@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Record Types that should be defaulted to when mapping a particular object, for a particular section.</description>
+    <fields>
+        <fullName>API_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The API Name of the record type to default to (for the Related Object).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Label that should up in an informational dialog/box to the user when this section is being displayed.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Label that should up in an informational dialog/box to the user when this section is being displayed.</inlineHelpText>
+        <label>Additional Information</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Controlling_Question_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The answer/section that controls this default.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Controlling Question Value</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Controlling_Question__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The question that this default originates from.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Controlling Question</label>
+        <referenceTo>SFDC_Industry_Assessment_Question__mdt</referenceTo>
+        <relationshipLabel>SFDC Industry Default Record Types</relationshipLabel>
+        <relationshipName>SFDC_Industry_Default_Record_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Object__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The SObject that this Record Type Default belongs to.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Related Object</label>
+        <referenceTo>SFDC_Industry_Mapping_Object__mdt</referenceTo>
+        <relationshipLabel>SFDC Industry Default Record Types</relationshipLabel>
+        <relationshipName>SFDC_Industry_Default_Record_Types</relationshipName>
+        <required>true</required>
+        <type>MetadataRelationship</type>
+        <unique>false</unique>
+    </fields>
+    <label>SFDC Industry Default Record Type</label>
+    <listViews>
+        <fullName>All_Defaults</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Related_Object__c</columns>
+        <columns>API_Name__c</columns>
+        <columns>Controlling_Question__c</columns>
+        <columns>Controlling_Question_Value__c</columns>
+        <columns>Additional_Information__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Defaults</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>SFDC Industry Default Record Types</pluralLabel>
+    <visibility>Protected</visibility>
+</CustomObject>

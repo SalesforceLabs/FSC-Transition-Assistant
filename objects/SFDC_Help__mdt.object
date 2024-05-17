@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Contains metadata related to the types of links displayed within the sidebar help component within the application</description>
+    <fields>
+        <fullName>Description_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Custom Label for the description of this link.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the Custom Label for the description of this link.</inlineHelpText>
+        <label>Description Label</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Icon_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the SLDS icon to show with this link (if applicable).</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the SLDS icon to show with this link (if applicable).</inlineHelpText>
+        <label>Icon Name</label>
+        <length>80</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Link_URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The destination URL for this help item.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The destination URL for this help item.</inlineHelpText>
+        <label>Link URL</label>
+        <required>true</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Where this help item can be found in the application.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Where this help item can be found in the application.</inlineHelpText>
+        <label>Location</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Help Sidebar - Main Link</fullName>
+                    <default>true</default>
+                    <label>Help Sidebar - Main Link</label>
+                </value>
+                <value>
+                    <fullName>Help Sidebar - Side Link</fullName>
+                    <default>false</default>
+                    <label>Help Sidebar - Side Link</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Title_Label__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Custom Label for the title of this link.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The name of the Custom Label for the title of this link.</inlineHelpText>
+        <label>Title Label</label>
+        <length>80</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>SFDC Help</label>
+    <listViews>
+        <fullName>All_Items</fullName>
+        <columns>MasterLabel</columns>
+        <columns>Title_Label__c</columns>
+        <columns>Description_Label__c</columns>
+        <columns>Link_URL__c</columns>
+        <columns>Icon_Name__c</columns>
+        <columns>Location__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Items</label>
+        <language>en_US</language>
+    </listViews>
+    <pluralLabel>SFDC Help</pluralLabel>
+    <visibility>Protected</visibility>
+</CustomObject>

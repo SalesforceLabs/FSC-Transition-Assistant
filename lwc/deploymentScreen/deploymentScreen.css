@@ -1,0 +1,15 @@
+.installSpinnerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+.verticalCard + .verticalCard {
+    margin-bottom: 1rem;
+}
+
+.spinner-align {
+    margin-top: 1rem;
+}

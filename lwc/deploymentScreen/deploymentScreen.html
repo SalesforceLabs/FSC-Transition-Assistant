@@ -1,0 +1,141 @@
+<template>
+    <div>
+        <template if:true={isLoading}>
+            <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                <div class="slds-card__body slds-card__body_inner">
+                    <div class="installSpinnerContainer">
+                        <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand">
+                            <span class="slds-assistive-text">{label.UIDeploymentTableLoadingText</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                        </div>
+                    </div> 
+                </div>
+            </article>    
+        </template>
+        <template if:false={isLoading}>
+            <template if:true={showPendingTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="custom:custom44" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIDeploymentTableHeaderInProgress}</span>
+                                </h2>
+                            </div>
+                            <div class="slds-no-flex">
+                                <div class="slds-align_absolute-center">
+                                    <div role="status" class="slds-spinner slds-spinner_small slds-spinner_inline slds-spinner_brand spinner-align">
+                                      <div class="slds-spinner__dot-a"></div>
+                                      <div class="slds-spinner__dot-b"></div>
+                                    </div>
+                                  </div>                    
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIDeploymentTableInProgressDescriptionText}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="DocumentId" data={pendingPackageList} columns={pendingTableColumns} hide-checkbox-column></c-assessment-datatable>
+                        </article>
+                    </div>
+                </article>
+            </template>
+            <template if:true={showErrorTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="custom:custom67" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIDeploymentTableHeaderError}</span>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIDeploymentTableErrorDescriptionText}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="VersionId" data={errorPackageList} columns={errorTableColumns} hide-checkbox-column></c-assessment-datatable >
+                        </article>
+                    </div>
+                </article>
+            </template>
+            <template if:true={showDeployedTable}>
+                <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                    <div class="slds-card__header slds-grid">
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <lightning-icon class="slds-icon_container" icon-name="standard:task2" size="small"></lightning-icon>
+                            </div>
+                            <div class="slds-media__body">
+                                <h2 class="slds-card__header-title">
+                                    <span>{label.UIDeploymentTableHeaderDeployed}</span>
+                                </h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-card__body slds-card__body_inner">
+                        <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIDeploymentTableDeployedDescriptionText}></lightning-formatted-rich-text></p>
+                        <article class="slds-card slds-card_boundary slds-is-relative">
+                            <c-assessment-datatable key-field="DocumentId" data={deployedPackageList} columns={deployedTableColumns} hide-checkbox-column></c-assessment-datatable>
+                        </article>
+                    </div>
+                </article>
+            </template>
+            <template if:false={showPendingTable}>
+                <template if:true={showDeployableTable}>
+                    <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <lightning-icon class="slds-icon_container" icon-name="standard:settings" size="small"></lightning-icon>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.UIDeploymentTableHeader}</span>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIDeploymentTableDescriptionText}></lightning-formatted-rich-text></p>
+                            <article class="slds-card slds-card_boundary slds-is-relative">
+                                <c-assessment-datatable key-field="DocumentId" data={deployablePackageList} columns={deployTableColumns} onrowaction={deploySelectedPackage} hide-checkbox-column></c-assessment-datatable>
+                            </article>
+                        </div>
+                    </article>
+                </template>
+            </template>
+            <template if:true={showPendingTable}>
+                <template if:true={showDeployableTable}>
+                    <article class="slds-card slds-card_boundary slds-is-relative verticalCard">
+                        <div class="slds-card__header slds-grid">
+                            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                                <div class="slds-media__figure">
+                                    <lightning-icon class="slds-icon_container" icon-name="standard:settings" size="small"></lightning-icon>
+                                </div>
+                                <div class="slds-media__body">
+                                    <h2 class="slds-card__header-title">
+                                        <span>{label.UIDeploymentTableHeaderAvailable}</span>
+                                    </h2>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="slds-card__body slds-card__body_inner">
+                            <p class="slds-m-bottom_large"><lightning-formatted-rich-text value={label.UIDeploymentTableAvailableDescriptionText}></lightning-formatted-rich-text></p>
+                            <article class="slds-card slds-card_boundary slds-is-relative">
+                                <c-assessment-datatable key-field="DocumentId" data={deployablePackageList} columns={availableTableColumns} hide-checkbox-column></c-assessment-datatable>
+                            </article>
+                        </div>
+                    </article>
+                </template>
+            </template>
+        </template>
+    </div>
+</template>

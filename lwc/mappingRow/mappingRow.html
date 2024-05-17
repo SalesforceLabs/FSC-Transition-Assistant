@@ -1,0 +1,55 @@
+<!-- Component that represents singular mapping row (object -> record type, field, fieldset)-->
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+    </template>
+    <div class="objectRow">
+        <!-- Object Selection -->
+        <lightning-layout class="sectionLayout" multiple-rows="true">
+            <!-- Header -->
+            <lightning-layout-item size="5">
+                <strong>Org Object</strong>
+            </lightning-layout-item>
+            <lightning-layout-item size="2">
+                
+            </lightning-layout-item>
+            <lightning-layout-item size="5">
+                <strong>FSC Object</strong>
+            </lightning-layout-item>
+            
+            <!-- Selection -->
+            <lightning-layout-item class="rowItem" size="5">
+                <lightning-combobox
+                    class="rowSelect"
+                    data-level="object"
+                    data-type="source"
+                    name="orgSchema"
+                    label="Org Object"
+                    value={mappingInfo.source}
+                    options={orgSchema}
+                    onchange={optionClicked}
+                    placeholder="-- None --"
+                    variant="label-hidden">
+                </lightning-combobox>
+            </lightning-layout-item>
+            <lightning-layout-item class="rowItem" size="2">
+                <lightning-icon class="mapIcon" icon-name="utility:forward"></lightning-icon>
+            </lightning-layout-item>
+            <lightning-layout-item class="rowItem" size="5">
+                <lightning-combobox
+                    class="rowSelect"
+                    data-level="object"
+                    data-type="destination"
+                    disabled
+                    name="fscSchema"
+                    label="FSC Object"
+                    onchange={selectRow}
+                    placeholder={mappingInfo.destination}
+                    value={mappingInfo.destination}
+                    variant="label-hidden">
+                </lightning-combobox>
+            </lightning-layout-item>
+        </lightning-layout>
+        <!-- END Object Selection-->
+    </div>
+</template>

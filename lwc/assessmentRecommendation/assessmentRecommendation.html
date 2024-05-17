@@ -1,0 +1,50 @@
+<template>
+    <template if:true={shouldShowRecommendation}>
+        <article class="slds-setup-assistant__step">
+            <div class="slds-summary-detail slds-is-open">
+                <div class="slds-container_fluid">
+                    <div class="slds-summary-detail__title">
+                        <div class="slds-setup-assistant__step-summary">
+                            <div class="slds-media">
+                                <div class="slds-media__figure">
+                                    <lightning-icon icon-name={recommendation.severityIcon} size={severityIconSize}></lightning-icon>
+                                </div>
+                                <div class="slds-media__body slds-m-top_x-small">
+                                    <div class="slds-media">
+                                        <div class="slds-setup-assistant__step-summary-content slds-media__body">
+                                            <h3 class="slds-setup-assistant__step-summary-title slds-text-heading_small">
+                                                {recommendation.text}
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="false" class="slds-summary-detail__content">
+                        <div class="slds-setup-assistant__step-detail">
+                            <div class="slds-progress slds-progress_vertical slds-progress_success">
+                                <ol class="slds-progress__list slds-progress__list-bordered">
+                                    <template for:each={recommendation.reasons} for:item="reason">
+                                        <li class="slds-progress__item" key={reason}>
+                                            <div class="slds-progress__marker"></div>
+                                            <div class="slds-progress__item_content slds-grid slds-grid_align-spread">
+                                                <div class="slds-size_3-of-4">
+                                                    <lightning-formatted-rich-text value={reason}></lightning-formatted-rich-text>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </template>
+                                </ol>
+                                <div aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" role="progressbar">
+                                    <!-- <span class="slds-assistive-text">Progress: 50%</span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
+    
+</template>

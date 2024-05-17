@@ -1,0 +1,1315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- FSC Transition --></label>
+        <name>FSC_Transition</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- AssessmentIntroDesc --></label>
+        <name>AssessmentIntroDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentIntroTitle --></label>
+        <name>AssessmentIntroTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentOptionalDisclaimer --></label>
+        <name>AssessmentOptionalDisclaimer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentPersonAccountNotice --></label>
+        <name>AssessmentPersonAccountNotice</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentQuestionRequiredText --></label>
+        <name>AssessmentQuestionRequiredText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderCreatedBy --></label>
+        <name>AssessmentReportHeaderCreatedBy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderDate --></label>
+        <name>AssessmentReportHeaderDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderLicensesPurchased --></label>
+        <name>AssessmentReportHeaderLicensesPurchased</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderOrgId --></label>
+        <name>AssessmentReportHeaderOrgId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderOrgType --></label>
+        <name>AssessmentReportHeaderOrgType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderReadyUpgrade --></label>
+        <name>AssessmentReportHeaderReadyUpgrade</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderReadyUpgradeNo --></label>
+        <name>AssessmentReportHeaderReadyUpgradeNo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderReadyUpgradeYes --></label>
+        <name>AssessmentReportHeaderReadyUpgradeYes</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderUpgradeType --></label>
+        <name>AssessmentReportHeaderUpgradeType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportHeaderVersion --></label>
+        <name>AssessmentReportHeaderVersion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportScanningAssist --></label>
+        <name>AssessmentReportScanningAssist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportScanningDesc --></label>
+        <name>AssessmentReportScanningDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportScanningTitle --></label>
+        <name>AssessmentReportScanningTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionDocumentation --></label>
+        <name>AssessmentReportSectionDocumentation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionProfileResults --></label>
+        <name>AssessmentReportSectionProfileResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionSharingSettingResults --></label>
+        <name>AssessmentReportSectionSharingSettingResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionSummaryAnalysis --></label>
+        <name>AssessmentReportSectionSummaryAnalysis</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionSummaryResults --></label>
+        <name>AssessmentReportSectionSummaryResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleAnalysis --></label>
+        <name>AssessmentReportSectionTitleAnalysis</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleApproach --></label>
+        <name>AssessmentReportSectionTitleApproach</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleIntro --></label>
+        <name>AssessmentReportSectionTitleIntro</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleOverallRecommendation --></label>
+        <name>AssessmentReportSectionTitleOverallRecommendation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleProfile --></label>
+        <name>AssessmentReportSectionTitleProfile</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleRecommendation --></label>
+        <name>AssessmentReportSectionTitleRecommendation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleResults --></label>
+        <name>AssessmentReportSectionTitleResults</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportSectionTitleWelcome --></label>
+        <name>AssessmentReportSectionTitleWelcome</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableComponentName --></label>
+        <name>AssessmentReportTableComponentName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableComponentType --></label>
+        <name>AssessmentReportTableComponentType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableFeature --></label>
+        <name>AssessmentReportTableFeature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTablePriority --></label>
+        <name>AssessmentReportTablePriority</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableRecommendation --></label>
+        <name>AssessmentReportTableRecommendation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableSharingExternal --></label>
+        <name>AssessmentReportTableSharingExternal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableSharingInternal --></label>
+        <name>AssessmentReportTableSharingInternal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableTransitionFrom --></label>
+        <name>AssessmentReportTableTransitionFrom</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableTransitionTo --></label>
+        <name>AssessmentReportTableTransitionTo</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportTableUsersAssigned --></label>
+        <name>AssessmentReportTableUsersAssigned</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportWelcomeCheckboxText --></label>
+        <name>AssessmentReportWelcomeCheckboxText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentReportWelcomeText --></label>
+        <name>AssessmentReportWelcomeText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentResultsEmptyTable --></label>
+        <name>AssessmentResultsEmptyTable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentSandboxDisclaimer --></label>
+        <name>AssessmentSandboxDisclaimer</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- AssessmentStatusMapping --></label>
+        <name>AssessmentStatusMapping</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeCheckbox --></label>
+        <name>DataTypeCheckbox</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeCurrency --></label>
+        <name>DataTypeCurrency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeDate --></label>
+        <name>DataTypeDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeDatetime --></label>
+        <name>DataTypeDatetime</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeEmail --></label>
+        <name>DataTypeEmail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeLocation --></label>
+        <name>DataTypeLocation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeLongText --></label>
+        <name>DataTypeLongText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeLookup --></label>
+        <name>DataTypeLookup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeMasterDetail --></label>
+        <name>DataTypeMasterDetail</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeMultiSelect --></label>
+        <name>DataTypeMultiSelect</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeNumber --></label>
+        <name>DataTypeNumber</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypePercent --></label>
+        <name>DataTypePercent</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypePhone --></label>
+        <name>DataTypePhone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypePicklist --></label>
+        <name>DataTypePicklist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeRichText --></label>
+        <name>DataTypeRichText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeText --></label>
+        <name>DataTypeText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeTextArea --></label>
+        <name>DataTypeTextArea</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeTime --></label>
+        <name>DataTypeTime</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DataTypeUrl --></label>
+        <name>DataTypeUrl</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DeploymentChecklistDescription --></label>
+        <name>DeploymentChecklistDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DeploymentChecklistTitle --></label>
+        <name>DeploymentChecklistTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- DeploymentPackageProcessing --></label>
+        <name>DeploymentPackageProcessing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FSCRetailBankingDescription --></label>
+        <name>FSCRetailBankingDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FSCWealthDescription --></label>
+        <name>FSCWealthDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameARC --></label>
+        <name>FeatureNameARC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameActionPlan --></label>
+        <name>FeatureNameActionPlan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameBranchManagement --></label>
+        <name>FeatureNameBranchManagement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameCompliantDataSharing --></label>
+        <name>FeatureNameCompliantDataSharing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameCustomerRoles --></label>
+        <name>FeatureNameCustomerRoles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameDocTracking --></label>
+        <name>FeatureNameDocTracking</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameFinancialAccounts --></label>
+        <name>FeatureNameFinancialAccounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameLifeEvents --></label>
+        <name>FeatureNameLifeEvents</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameRelationshipGroups --></label>
+        <name>FeatureNameRelationshipGroups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureNameRollups --></label>
+        <name>FeatureNameRollups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonARC --></label>
+        <name>FeatureReasonARC</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonActionPlan --></label>
+        <name>FeatureReasonActionPlan</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonCompliantDataSharing --></label>
+        <name>FeatureReasonCompliantDataSharing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonCustomerRoles --></label>
+        <name>FeatureReasonCustomerRoles</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonDefault --></label>
+        <name>FeatureReasonDefault</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonDocTracking --></label>
+        <name>FeatureReasonDocTracking</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonFinancialAccounts --></label>
+        <name>FeatureReasonFinancialAccounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonLifeEvents --></label>
+        <name>FeatureReasonLifeEvents</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonRelationshipGroups --></label>
+        <name>FeatureReasonRelationshipGroups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- FeatureReasonRollups --></label>
+        <name>FeatureReasonRollups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpAdminGuideDesc --></label>
+        <name>HelpAdminGuideDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpAdminGuideTitle --></label>
+        <name>HelpAdminGuideTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpFSCCDSTitle --></label>
+        <name>HelpFSCCDSTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpFSCDataModelTitle --></label>
+        <name>HelpFSCDataModelTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpFSCInstallTitle --></label>
+        <name>HelpFSCInstallTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpReleaseNotesTitle --></label>
+        <name>HelpReleaseNotesTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpTitle --></label>
+        <name>HelpTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpTrailblazerTitle --></label>
+        <name>HelpTrailblazerTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpTrailheadDesc --></label>
+        <name>HelpTrailheadDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HelpTrailheadTitle --></label>
+        <name>HelpTrailheadTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescAARelation --></label>
+        <name>IndustriesObjectDescAARelation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescACRelation --></label>
+        <name>IndustriesObjectDescACRelation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescAccount --></label>
+        <name>IndustriesObjectDescAccount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescBanker --></label>
+        <name>IndustriesObjectDescBanker</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescBranchUnit --></label>
+        <name>IndustriesObjectDescBranchUnit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescBranchUnitBM --></label>
+        <name>IndustriesObjectDescBranchUnitBM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescBranchUnitCust --></label>
+        <name>IndustriesObjectDescBranchUnitCust</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescCCRelation --></label>
+        <name>IndustriesObjectDescCCRelation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescFinAccount --></label>
+        <name>IndustriesObjectDescFinAccount</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- IndustriesObjectDescFinAccountRole --></label>
+        <name>IndustriesObjectDescFinAccountRole</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingAdditionalDesc --></label>
+        <name>MappingAdditionalDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingAdditionalTitle --></label>
+        <name>MappingAdditionalTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDetailsTitle --></label>
+        <name>MappingDetailsTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnConflict --></label>
+        <name>MappingDocColumnConflict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnDataType --></label>
+        <name>MappingDocColumnDataType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnDecimalPlaces --></label>
+        <name>MappingDocColumnDecimalPlaces</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnDest --></label>
+        <name>MappingDocColumnDest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnDestObject --></label>
+        <name>MappingDocColumnDestObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnLength --></label>
+        <name>MappingDocColumnLength</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnRequired --></label>
+        <name>MappingDocColumnRequired</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnSection --></label>
+        <name>MappingDocColumnSection</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnSource --></label>
+        <name>MappingDocColumnSource</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnSourceObject --></label>
+        <name>MappingDocColumnSourceObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocColumnType --></label>
+        <name>MappingDocColumnType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocExtension --></label>
+        <name>MappingDocExtension</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocSectionAdditional --></label>
+        <name>MappingDocSectionAdditional</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocTitle --></label>
+        <name>MappingDocTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocTypeField --></label>
+        <name>MappingDocTypeField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingDocTypeRT --></label>
+        <name>MappingDocTypeRT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingFieldAdd --></label>
+        <name>MappingFieldAdd</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingFieldDest --></label>
+        <name>MappingFieldDest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingFieldSource --></label>
+        <name>MappingFieldSource</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingFieldTitle --></label>
+        <name>MappingFieldTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingIntro --></label>
+        <name>MappingIntro</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingObjectAdd --></label>
+        <name>MappingObjectAdd</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingObjectDest --></label>
+        <name>MappingObjectDest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingObjectRemove --></label>
+        <name>MappingObjectRemove</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingObjectSource --></label>
+        <name>MappingObjectSource</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRTAdd --></label>
+        <name>MappingRTAdd</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRTDest --></label>
+        <name>MappingRTDest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRTSource --></label>
+        <name>MappingRTSource</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRTTitle --></label>
+        <name>MappingRTTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRecommendedDesc --></label>
+        <name>MappingRecommendedDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingRecommendedTitle --></label>
+        <name>MappingRecommendedTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MappingSectionAnswerBranches --></label>
+        <name>MappingSectionAnswerBranches</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaActive --></label>
+        <name>NewMetaActive</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaApiName --></label>
+        <name>NewMetaApiName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaChildRelationship --></label>
+        <name>NewMetaChildRelationship</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaConnectedObject --></label>
+        <name>NewMetaConnectedObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaConnectedObjectPlaceholder --></label>
+        <name>NewMetaConnectedObjectPlaceholder</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaDecimals --></label>
+        <name>NewMetaDecimals</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaDefaultChecked --></label>
+        <name>NewMetaDefaultChecked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaDefaultUnchecked --></label>
+        <name>NewMetaDefaultUnchecked</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaDefaultValue --></label>
+        <name>NewMetaDefaultValue</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaDesc --></label>
+        <name>NewMetaDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaExternalId --></label>
+        <name>NewMetaExternalId</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaHelpText --></label>
+        <name>NewMetaHelpText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaLabel --></label>
+        <name>NewMetaLabel</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaLength --></label>
+        <name>NewMetaLength</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaLocationNotation --></label>
+        <name>NewMetaLocationNotation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaPicklistValues --></label>
+        <name>NewMetaPicklistValues</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaRequired --></label>
+        <name>NewMetaRequired</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaReviewSummary --></label>
+        <name>NewMetaReviewSummary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaTitleField --></label>
+        <name>NewMetaTitleField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaTitleRecordType --></label>
+        <name>NewMetaTitleRecordType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaUnique --></label>
+        <name>NewMetaUnique</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NewMetaVisibleLines --></label>
+        <name>NewMetaVisibleLines</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PackageDescriptionFSCExt --></label>
+        <name>PackageDescriptionFSCExt</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PackageDescriptionFSCExtCommercial --></label>
+        <name>PackageDescriptionFSCExtCommercial</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PackageDescriptionFSCExtReferral --></label>
+        <name>PackageDescriptionFSCExtReferral</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PackageDescriptionFSCFlow --></label>
+        <name>PackageDescriptionFSCFlow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PackageDescriptionFinancialServicesCloud --></label>
+        <name>PackageDescriptionFinancialServicesCloud</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionBranchManagement --></label>
+        <name>QuestionBranchManagement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionCustomerRepresentation --></label>
+        <name>QuestionCustomerRepresentation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionExternalData --></label>
+        <name>QuestionExternalData</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionFinancialAccounts --></label>
+        <name>QuestionFinancialAccounts</name>
+    </customLabels>
+    <customLabels>
+        <label>Mexican spanish test</label>
+        <name>QuestionIndustry</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionRelationshipGroupings --></label>
+        <name>QuestionRelationshipGroupings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionRollups --></label>
+        <name>QuestionRollups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- QuestionScreenDesc --></label>
+        <name>QuestionScreenDesc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountHierarchyUsageHigh --></label>
+        <name>RecAccountHierarchyUsageHigh</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountHierarchyUsageHighReason1 --></label>
+        <name>RecAccountHierarchyUsageHighReason1</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountHierarchyUsageHighReason2 --></label>
+        <name>RecAccountHierarchyUsageHighReason2</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountRelationsUsage --></label>
+        <name>RecAccountRelationsUsage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountRelationsUsageReason --></label>
+        <name>RecAccountRelationsUsageReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountRollupCalculationUsage --></label>
+        <name>RecAccountRollupCalculationUsage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAccountRollupCalculationUsageReason --></label>
+        <name>RecAccountRollupCalculationUsageReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecActivityTooManyLookups --></label>
+        <name>RecActivityTooManyLookups</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecActivityTooManyLookupsReasonTotal --></label>
+        <name>RecActivityTooManyLookupsReasonTotal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecAdvancedCurrencyEnabled --></label>
+        <name>RecAdvancedCurrencyEnabled</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeApexClass --></label>
+        <name>RecComponentTypeApexClass</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeApexPage --></label>
+        <name>RecComponentTypeApexPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeApexTrigger --></label>
+        <name>RecComponentTypeApexTrigger</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeAuraComponentBundle --></label>
+        <name>RecComponentTypeAuraComponentBundle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeAutomateDefault --></label>
+        <name>RecComponentTypeAutomateDefault</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeContactB2C --></label>
+        <name>RecComponentTypeContactB2C</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeCustomField --></label>
+        <name>RecComponentTypeCustomField</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeCustomObject --></label>
+        <name>RecComponentTypeCustomObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeDefault --></label>
+        <name>RecComponentTypeDefault</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeFlexiPage --></label>
+        <name>RecComponentTypeFlexiPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeFlow --></label>
+        <name>RecComponentTypeFlow</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeStandardObject --></label>
+        <name>RecComponentTypeStandardObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecComponentTypeWorkflowRule --></label>
+        <name>RecComponentTypeWorkflowRule</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecCurrencySettings --></label>
+        <name>RecCurrencySettings</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecCurrencySettingsReasonMultiCurrency --></label>
+        <name>RecCurrencySettingsReasonMultiCurrency</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecCustomObjectConflict --></label>
+        <name>RecCustomObjectConflict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecCustomObjectConflictReason --></label>
+        <name>RecCustomObjectConflictReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasFsc --></label>
+        <name>RecHasFsc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasLicensedFeature --></label>
+        <name>RecHasLicensedFeature</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasLicensedFeatureReason --></label>
+        <name>RecHasLicensedFeatureReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasNoContactMultipleAccounts --></label>
+        <name>RecHasNoContactMultipleAccounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasNoFsc --></label>
+        <name>RecHasNoFsc</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasNoFscLicenses --></label>
+        <name>RecHasNoFscLicenses</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasNoLex --></label>
+        <name>RecHasNoLex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecHasNoPersonAccounts --></label>
+        <name>RecHasNoPersonAccounts</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecIsvMarketingCloud --></label>
+        <name>RecIsvMarketingCloud</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecIsvPackageConflict --></label>
+        <name>RecIsvPackageConflict</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecIsvPackageConflictReason --></label>
+        <name>RecIsvPackageConflictReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecIsvPardot --></label>
+        <name>RecIsvPardot</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecObjectTooManyFields --></label>
+        <name>RecObjectTooManyFields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecObjectTooManyFieldsReasonTotal --></label>
+        <name>RecObjectTooManyFieldsReasonTotal</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecOrgFscInstallationReady --></label>
+        <name>RecOrgFscInstallationReady</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecRecordHighDataVolume --></label>
+        <name>RecRecordHighDataVolume</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecRecordHighDataVolumeReason --></label>
+        <name>RecRecordHighDataVolumeReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecRecordHighDataVolumeReasonContact --></label>
+        <name>RecRecordHighDataVolumeReasonContact</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecRecordHighDataVolumeReasonStorage --></label>
+        <name>RecRecordHighDataVolumeReasonStorage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCDSRecommendation --></label>
+        <name>RecSharingSettingsCDSRecommendation</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCheckMatchingReason --></label>
+        <name>RecSharingSettingsCheckMatchingReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCheckMismatchReason --></label>
+        <name>RecSharingSettingsCheckMismatchReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCheckPersonAccountReason --></label>
+        <name>RecSharingSettingsCheckPersonAccountReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCheckTitle --></label>
+        <name>RecSharingSettingsCheckTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCompliantDataSharingReason --></label>
+        <name>RecSharingSettingsCompliantDataSharingReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsCustomObjectReplacesStandard --></label>
+        <name>RecSharingSettingsCustomObjectReplacesStandard</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecSharingSettingsHasApexSharing --></label>
+        <name>RecSharingSettingsHasApexSharing</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachBrownfieldClean --></label>
+        <name>RecUpgradeApproachBrownfieldClean</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachBrownfieldCleanSummary --></label>
+        <name>RecUpgradeApproachBrownfieldCleanSummary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachBrownfieldComplex --></label>
+        <name>RecUpgradeApproachBrownfieldComplex</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachBrownfieldComplexSummary --></label>
+        <name>RecUpgradeApproachBrownfieldComplexSummary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachGreenfield --></label>
+        <name>RecUpgradeApproachGreenfield</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- RecUpgradeApproachGreenfieldSummary --></label>
+        <name>RecUpgradeApproachGreenfieldSummary</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ReportCopyMappingDocLink --></label>
+        <name>ReportCopyMappingDocLink</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SharingRuleReimplement --></label>
+        <name>SharingRuleReimplement</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SharingSettingsApexReason --></label>
+        <name>SharingSettingsApexReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SharingSettingsCDSReason --></label>
+        <name>SharingSettingsCDSReason</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastMessageAutoMap --></label>
+        <name>ToastMessageAutoMap</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastMessageError --></label>
+        <name>ToastMessageError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastMessageLinkCopied --></label>
+        <name>ToastMessageLinkCopied</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastMessageMappingSaved --></label>
+        <name>ToastMessageMappingSaved</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastTitleError --></label>
+        <name>ToastTitleError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ToastTitleSuccess --></label>
+        <name>ToastTitleSuccess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeApprovalProcess --></label>
+        <name>TypeApprovalProcess</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeCustomObject --></label>
+        <name>TypeCustomObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeEmailAlert --></label>
+        <name>TypeEmailAlert</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeLightningPage --></label>
+        <name>TypeLightningPage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeOutboundMessage --></label>
+        <name>TypeOutboundMessage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypePageLayout --></label>
+        <name>TypePageLayout</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeProfilesPermissionSets --></label>
+        <name>TypeProfilesPermissionSets</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeStandardObject --></label>
+        <name>TypeStandardObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TypeVisualforcePage --></label>
+        <name>TypeVisualforcePage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentPageTabChecklist --></label>
+        <name>UIAssessmentPageTabChecklist</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentPageTabDeploy --></label>
+        <name>UIAssessmentPageTabDeploy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentPageTabInstall --></label>
+        <name>UIAssessmentPageTabInstall</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentPageTabReport --></label>
+        <name>UIAssessmentPageTabReport</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentPageTabRollout --></label>
+        <name>UIAssessmentPageTabRollout</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIAssessmentTitle --></label>
+        <name>UIAssessmentTitle</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIBackButtonText --></label>
+        <name>UIBackButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIButtonGenerateDeploymentPackage --></label>
+        <name>UIButtonGenerateDeploymentPackage</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UICancelButtonText --></label>
+        <name>UICancelButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UICloseButtonText --></label>
+        <name>UICloseButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UICompleteAssessmentText --></label>
+        <name>UICompleteAssessmentText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIConfirmButtonText --></label>
+        <name>UIConfirmButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIContinueButtonText --></label>
+        <name>UIContinueButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeployTableColumnComponentName --></label>
+        <name>UIDeployTableColumnComponentName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeployTableColumnComponentType --></label>
+        <name>UIDeployTableColumnComponentType</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeployTableColumnSourceObject --></label>
+        <name>UIDeployTableColumnSourceObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeployTableColumnTargetObject --></label>
+        <name>UIDeployTableColumnTargetObject</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableAvailableDescriptionText --></label>
+        <name>UIDeploymentTableAvailableDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableButtonDeploy --></label>
+        <name>UIDeploymentTableButtonDeploy</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableDeployedDescriptionText --></label>
+        <name>UIDeploymentTableDeployedDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableDescriptionText --></label>
+        <name>UIDeploymentTableDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableErrorDescriptionText --></label>
+        <name>UIDeploymentTableErrorDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeader --></label>
+        <name>UIDeploymentTableHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderAssessment --></label>
+        <name>UIDeploymentTableHeaderAssessment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderAvailable --></label>
+        <name>UIDeploymentTableHeaderAvailable</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderDate --></label>
+        <name>UIDeploymentTableHeaderDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderDeployed --></label>
+        <name>UIDeploymentTableHeaderDeployed</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderDeployment --></label>
+        <name>UIDeploymentTableHeaderDeployment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderDescription --></label>
+        <name>UIDeploymentTableHeaderDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderEndDate --></label>
+        <name>UIDeploymentTableHeaderEndDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderError --></label>
+        <name>UIDeploymentTableHeaderError</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderInProgress --></label>
+        <name>UIDeploymentTableHeaderInProgress</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableHeaderStartDate --></label>
+        <name>UIDeploymentTableHeaderStartDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableInProgressDescriptionText --></label>
+        <name>UIDeploymentTableInProgressDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIDeploymentTableLoadingText --></label>
+        <name>UIDeploymentTableLoadingText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIFinishButtonText --></label>
+        <name>UIFinishButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableActionClone --></label>
+        <name>UIIntroTableActionClone</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableActionText --></label>
+        <name>UIIntroTableActionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableHeaderDate --></label>
+        <name>UIIntroTableHeaderDate</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableHeaderDescription --></label>
+        <name>UIIntroTableHeaderDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableHeaderName --></label>
+        <name>UIIntroTableHeaderName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIIntroTableHeaderStatus --></label>
+        <name>UIIntroTableHeaderStatus</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UILoadingText --></label>
+        <name>UILoadingText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UINewAssessmentButtonText --></label>
+        <name>UINewAssessmentButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UINextButtonText --></label>
+        <name>UINextButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableButtonText --></label>
+        <name>UIPackageTableButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableDescriptionText --></label>
+        <name>UIPackageTableDescriptionText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableErrorDescription --></label>
+        <name>UIPackageTableErrorDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableErrorHeader --></label>
+        <name>UIPackageTableErrorHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableHeaderDescription --></label>
+        <name>UIPackageTableHeaderDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableHeaderName --></label>
+        <name>UIPackageTableHeaderName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableHeaderText --></label>
+        <name>UIPackageTableHeaderText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableHeaderVersion --></label>
+        <name>UIPackageTableHeaderVersion</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableInstallInProgressText --></label>
+        <name>UIPackageTableInstallInProgressText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableInstalledDescription --></label>
+        <name>UIPackageTableInstalledDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableInstalledHeader --></label>
+        <name>UIPackageTableInstalledHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableInstallingDescription --></label>
+        <name>UIPackageTableInstallingDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableInstallingHeader --></label>
+        <name>UIPackageTableInstallingHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableLoadingText --></label>
+        <name>UIPackageTableLoadingText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableNoResultsText --></label>
+        <name>UIPackageTableNoResultsText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableRecommendedDescription --></label>
+        <name>UIPackageTableRecommendedDescription</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPackageTableRecommendedHeader --></label>
+        <name>UIPackageTableRecommendedHeader</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIPicklistPlaceholderText --></label>
+        <name>UIPicklistPlaceholderText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UISaveButtonText --></label>
+        <name>UISaveButtonText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UISaveProgressText --></label>
+        <name>UISaveProgressText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIStartAssessmentText --></label>
+        <name>UIStartAssessmentText</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIVerticalBanking --></label>
+        <name>UIVerticalBanking</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- UIVerticalWealth --></label>
+        <name>UIVerticalWealth</name>
+    </customLabels>
+</Translations>

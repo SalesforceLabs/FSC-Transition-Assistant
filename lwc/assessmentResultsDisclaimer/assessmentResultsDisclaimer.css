@@ -1,0 +1,15 @@
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkboxDiv {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.welcomeText {
+    margin-bottom: 2rem;
+}

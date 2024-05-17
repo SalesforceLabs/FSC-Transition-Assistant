@@ -1,0 +1,112 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+    </template>
+    <template if:true={isScanning}>
+        <div class="stillScanningContainer">
+            <div class="slds-text-heading_large">{label.stillScanningWelcome}</div>
+            <div class="slds-text-heading_small" style="margin-top: .5rem;">{label.stillScanningText}</div>
+            <div role="status" class="slds-spinner slds-spinner_medium slds-spinner_brand" style="margin-top: 2.5rem;">
+                <span class="slds-assistive-text">{label.scanningAssistText}</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </template>
+
+    <template if:false={isScanning}>
+        <template if:false={isLoading}>
+            <lightning-accordion allow-multiple-sections-open="true" active-section-name={activeSections}>
+                <!-- Report Header -->
+                <c-assessment-results-header assessment={assessment} results={assessmentResults}></c-assessment-results-header>
+
+                <!-- Report Content Sections -->
+                <lightning-accordion-section name="welcome" label={label.sectionWelcomeTitle}>
+                    <div class="sectionContainer" style="margin-top: 1rem;
+                    margin-bottom: 1rem;">
+                        <c-assessment-results-disclaimer onshowreport={showreport}></c-assessment-results-disclaimer>
+                    </div>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="overallrecommendation" label={label.sectionOverallRecommendation}>
+                    <div class="sectionContainer" style="margin-top: 1rem;
+                    margin-bottom: 1rem;">
+                        <c-assessment-recommendation recommendation={assessmentResults.overallRecommendation}></c-assessment-recommendation>
+                    </div>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="recommendation" label={label.sectionRecommendationTitle}>
+                    <template for:each={assessmentResults.recommendations} for:item="rec">
+                        <ol class="slds-setup-assistant" key={rec.text}>
+                            <li class="slds-setup-assistant__item">
+                                <c-assessment-recommendation recommendation={rec}></c-assessment-recommendation>
+                            </li>
+                        </ol>
+                    </template>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="results" label={label.sectionResultsTitle}>
+                    <p class="slds-text-body_regular slds-p-around_small">{label.sectionResultsSummary}</p>
+                    <div class="slds-scrollable_y" style="max-height: 800px;">
+                        <lightning-datatable
+                            key-field="uuid"
+                            hide-checkbox-column="true"
+                            columns={resultsColumns}
+                            data={resultsData}>
+                        </lightning-datatable>
+                    </div>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="analysis" label={label.sectionAnalysisTitle}>
+                    <p class="slds-text-body_regular slds-p-around_small">{label.sectionAnalysisSummary}</p>
+                    <template if:true={hasAnalysisData}>
+                        <div class="slds-scrollable_y" style="max-height: 800px;">
+                            <div class={tableClass}>
+                                <lightning-tree-grid
+                                    key-field="uuid"
+                                    hide-checkbox-column="true"
+                                    columns={analysisColumns}
+                                    data={analysisData}>
+                                </lightning-tree-grid>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:false={hasAnalysisData}>
+                        <p class="slds-text-body_regular slds-p-around_small" style="font-weight: bold;">{label.assessmentResultsEmptyTable}</p>
+                    </template>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="profileInfo" label={label.sectionProfileSummary}>
+                    <p class="slds-text-body_regular slds-p-around_small">{label.sectionProfileResults}</p>
+                    <template if:true={hasAccessData}>
+                        <div class="slds-scrollable_y" style="max-height: 800px;">
+                            <lightning-tree-grid
+                                key-field="uuid"
+                                hide-checkbox-column="true"
+                                columns={accessInfoColumns}
+                                data={accessData}>
+                            </lightning-tree-grid>
+                        </div>
+                    </template>
+                    <template if:false={hasAccessData}>
+                        <p class="slds-text-body_regular slds-p-around_small" style="font-weight: bold;">{label.assessmentResultsEmptyTable}</p>
+                    </template>
+                </lightning-accordion-section>
+                <lightning-accordion-section name="sharingSettingInfo" label="Sharing Settings">
+                    <p class="slds-text-body_regular slds-p-around_small">{label.sectionSharingSettingResults}</p>
+                    <template if:true={hasSharingSettingData}>
+                        <div class="slds-scrollable_y" style="max-height: 800px;">
+                            <div class={tableClass}>
+                                <lightning-tree-grid
+                                    key-field="uuid"
+                                    hide-checkbox-column="true"
+                                    columns={sharingSettingColumns}
+                                    data={sharingSettingData}>
+                                </lightning-tree-grid>
+                            </div>
+                        </div>
+                    </template>
+                    <template if:false={hasSharingSettingData}>
+                        <p class="slds-text-body_regular slds-p-around_small" style="font-weight: bold;">{label.assessmentResultsEmptyTable}</p>
+                    </template>
+                </lightning-accordion-section>
+            </lightning-accordion>
+        </template>
+    </template>
+</template>

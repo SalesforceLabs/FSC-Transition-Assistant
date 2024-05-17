@@ -1,0 +1,16 @@
+<template>
+    <div class="container">
+        <lightning-formatted-rich-text class="welcomeText" value={label.AssessmentReportWelcomeText}></lightning-formatted-rich-text>
+
+        <template if:true={showUserPrompt}>
+            <p class="checkboxDiv">
+                <lightning-input type="checkbox"
+                    label={label.AssessmentReportWelcomeCheckboxText}
+                    checked={dontShowSelected} onchange={setDontShow} variant="label-hidden">
+                </lightning-input>
+                &nbsp;{label.AssessmentReportWelcomeCheckboxText}
+            </p>
+            <lightning-button variant="brand" label={label.UIContinueButtonText} title={label.UIContinueButtonText} onclick={continueClicked} class="actionButton"></lightning-button>
+        </template>
+    </div>
+</template>

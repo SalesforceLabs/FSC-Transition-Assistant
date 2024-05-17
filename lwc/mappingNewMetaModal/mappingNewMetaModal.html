@@ -1,0 +1,174 @@
+<template>
+    <!-- Modal/Popup Box LWC starts here -->
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <!-- Modal/Popup Box LWC header here -->
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title={label.UICloseButtonText} onclick={closeModal}>
+                    <lightning-icon icon-name="utility:close"
+                        alternative-text={label.UICloseButtonText}
+                        variant="inverse"
+                        size="small" ></lightning-icon>
+                    <span class="slds-assistive-text">{label.UICloseButtonText}</span>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">{HeaderText}</h2>
+            </header>
+            <!-- Modal/Popup Box LWC body starts here -->
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+                <!-- Step 1: Data Type -->
+                <template if:true={isStep1}>
+                    <!-- Fields -->
+                    <template if:false={isRecordType}>
+                        <lightning-radio-group name="radioGroup"
+                            label="Step 1. Choose the field type"
+                            options={fieldOptions}
+                            onchange={setDataType}
+                            value={dataType}
+                            variant="label-hidden"
+                            type="radio" required></lightning-radio-group>
+                    </template>
+                </template>
+               
+
+                <!-- Step 2: Info -->
+                <template if:true={isStep2}>
+
+                    <!-- Both -->
+                    <lightning-input label={label.NewMetaLabel} onblur={autoSetApiName} onchange={setLabel} value={metaLabel} required></lightning-input>
+                    <lightning-input label={label.NewMetaApiName} onchange={setApiName} value={apiName} required></lightning-input>
+                    <lightning-input label={label.NewMetaDesc} onchange={setDescription} value={description}></lightning-input>
+
+                    <!-- Reference Field Inputs (Lookup/Master-Detail)-->
+                    <template if:true={showConnectedObject}>
+                        <lightning-combobox
+                            name="connectedObject"
+                            label={label.NewMetaConnectedObject}
+                            value={connectedObject}
+                            placeholder={label.NewMetaConnectedObjectPlaceholder}
+                            options={orgObjects}
+                            onchange={setConnectedObject} ></lightning-combobox>
+                        
+                        <lightning-input label={label.NewMetaChildRelationship} onchange={setChildRelatonshipName} value={childRelationshipName} required></lightning-input>
+                    </template>
+
+                    <!-- Record Types -->
+                    <template if:true={isRecordType}>
+                        <template if:true={isRecordType}>
+                            <lightning-input class="checkboxInput" type="checkbox"
+                            label={label.NewMetaActive}
+                            onchange={setActive}
+                            checked={rtActive}></lightning-input>
+                        </template>
+                    </template>
+
+                    <!-- Fields -->
+                    <template if:false={isRecordType}>
+                        <lightning-input label={label.NewMetaHelpText} value={helpText} onchange={setHelpText}></lightning-input>
+
+                        <template if:true={hasLength}>
+                            <lightning-input label={label.NewMetaLength} onchange={setLength} value={fieldLength} required></lightning-input>
+                        </template>
+
+                        <template if:true={showRequired}>
+                            <lightning-input class="checkboxInput" type="checkbox"
+                                label={label.NewMetaRequired}
+                                onchange={setRequired}
+                                checked={required}></lightning-input>
+                        </template>
+                        
+
+                        <template if:true={showUnique}>
+                            <lightning-input class="checkboxInput" type="checkbox"
+                                label={label.NewMetaUnique}
+                                onchange={setUnique}
+                                checked={unique}></lightning-input>
+                        </template>
+                        
+                        <template if:true={showDefault}>
+                            <template if:true={showBooleanDefaultValue}>
+                                <lightning-radio-group name="radioGroup"
+                                label={label.NewMetaDefaultValue}
+                                options={checkedOptions}
+                                onchange={setDefaultValue}
+                                value={defaultValue}
+                                type="radio"></lightning-radio-group>
+                            </template>
+                            <template if:false={showBooleanDefaultValue}>
+                                <lightning-input label={label.NewMetaDefaultValue} onchange={setDefaultValue} value={defaultValue}></lightning-input>
+                            </template>
+                        </template> 
+                    </template>
+                </template>
+                
+                
+
+                <!-- Step 3: Review -->
+                <template if:true={isStep3}>
+                    <div class="reviewScreen">
+                        <div class="summaryDiv slds-text-heading_medium">
+                            <p>{label.NewMetaReviewSummary}</p>
+                        </div>
+
+                        <p><b>{label.NewMetaLabel}:</b>&nbsp;{metaLabel}</p>
+                        <p><b>{label.NewMetaApiName}:</b>&nbsp;{apiName}</p>
+                        <p><b>{label.NewMetaDesc}:</b>&nbsp;{description}</p>
+
+                        <template if:true={showConnectedObject}>
+                            <p><b>{label.NewMetaConnectedObject}:</b>&nbsp;{connectedObject}</p>
+                            <p><b>{label.NewMetaChildRelationship}:</b>&nbsp;{childRelationshipName}</p>
+                        </template>
+
+                        <template if:true={isRecordType}>
+                            <lightning-input type="checkbox"
+                                label={label.NewMetaActive}
+                                checked={rtActive} disabled></lightning-input>
+                        </template>
+
+                        <template if:false={isRecordType}>
+                            <p><b>{label.NewMetaHelpText}:</b>&nbsp;{helpText}</p>
+
+                            <template if:true={showRequired}>
+                                <p class="checkboxDiv"><b>{label.NewMetaRequired}:</b>&nbsp;
+                                    <lightning-input type="checkbox"
+                                        label={label.NewMetaRequired}
+                                        checked={required} disabled variant="label-hidden">
+                                    </lightning-input>
+                                </p>    
+                            </template>
+                            
+                            <template if:true={showUnique}>
+                                <p class="checkboxDiv"><b>{label.NewMetaUnique}:</b>&nbsp;
+                                    <lightning-input type="checkbox"
+                                        label={label.NewMetaUnique}
+                                        checked={unique} disabled variant="label-hidden">
+                                    </lightning-input>
+                                </p> 
+                            </template>
+                            
+                            <template if:true={showDefault}>
+                                <p><b>{label.NewMetaDefaultValue}:</b>&nbsp;{defaultValue}</p>
+                            </template>    
+                        </template>
+                    </div>
+                    
+                </template>
+            </div>
+            <!-- Modal/Popup Box LWC footer starts here -->
+            <footer class="slds-modal__footer">
+                <button class="slds-button slds-button_neutral" onclick={closeModal} title={label.UICancelButtonText}>{label.UICancelButtonText}</button>
+                <template if:false={isStep1}>
+                    <button class="slds-button slds-button_neutral" onclick={goBack} title={label.UIBackButtonText}>{label.UIBackButtonText}</button>
+                </template>
+                <template if:false={isStep3}>
+                    <button class="slds-button slds-button_brand" onclick={goNext} title={label.UINextButtonText}>{label.UINextButtonText}</button>
+                </template>
+                <template if:true={isStep3}>
+                    <button class="slds-button slds-button_brand" onclick={saveItem} title={label.UIConfirmButtonText}>{label.UIConfirmButtonText}</button>
+                </template>
+                
+            </footer>
+        </div>
+    </section>
+    <!-- <div class="slds-backdrop slds-backdrop_open"></div> -->
+ </template>

@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AssessmentIntroDesc</fullName>
+        <categories>Assessment, Intro</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentIntroDesc</shortDescription>
+        <value>&lt;b&gt;Welcome!&lt;/b&gt; This tool can be used to plan a transition to Financial Services Cloud and identify dependency conflicts and potential key points of resistance when going through the transition. Please take the time to fill out an Assessment, or resume an already in-progress assessment below.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentIntroTitle</fullName>
+        <categories>Assessment, Intro</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentIntroTitle</shortDescription>
+        <value>Financial Services Cloud Transition Assistant</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentOptionalDisclaimer</fullName>
+        <categories>Assessment, Intro</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentOptionalDisclaimer</shortDescription>
+        <value>&lt;b&gt;Please note that while all answers within the assessment are optional, the accuracy of the results from the report may vary greatly if questions are not answered. We encourage you to answer all portions of the assessment to the best of your ability.&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentPersonAccountNotice</fullName>
+        <categories>Assessment</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentPersonAccountNotice</shortDescription>
+        <value>When operating with a B2C model, it is highly recommend that you use Person Accounts for your customers. For more information on Person Accounts, please refer to the following documentation: &lt;a target=&quot;_blank&quot; href=&quot;https://help.salesforce.com/articleView?id=sf.account_person.htm&amp;type=5&quot;&gt;https://help.salesforce.com/articleView?id=sf.account_person.htm&amp;type=5&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentQuestionRequiredText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentQuestionRequiredText</shortDescription>
+        <value>Based on your current selection an answer to this question is required before completing the assessment.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderCreatedBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderCreatedBy</shortDescription>
+        <value>Created By:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderDate</shortDescription>
+        <value>Report Date:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderLicensesPurchased</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderLicensesPurchased</shortDescription>
+        <value>FSC Licenses Purchased?</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderOrgId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderOrgId</shortDescription>
+        <value>Org ID:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderOrgType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderOrgType</shortDescription>
+        <value>Org Type:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderReadyUpgrade</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderReadyUpgrade</shortDescription>
+        <value>Ready To Transition?</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderReadyUpgradeNo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderReadyUpgradeNo</shortDescription>
+        <value>Your org is not ready for the transition</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderReadyUpgradeYes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderReadyUpgradeYes</shortDescription>
+        <value>Your org is ready for the transition</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderUpgradeType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderUpgradeType</shortDescription>
+        <value>Transition Type:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportHeaderVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportHeaderVersion</shortDescription>
+        <value>Assessment Version:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportScanningAssist</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportScanningAssist</shortDescription>
+        <value>Scanning</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportScanningDesc</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportScanningDesc</shortDescription>
+        <value>Your organization is still being scanned to provide the most accurate results. Please wait for the scan to complete or come back later.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportScanningTitle</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportScanningTitle</shortDescription>
+        <value>We&apos;re Not Quite Ready Yet</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionDocumentation</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionDocumentation</shortDescription>
+        <value>More information available here:</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionProfileResults</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionProfileResults</shortDescription>
+        <value>Here&apos;s a technical analysis showing all the profiles and permission sets in this org related to objects and fields mapped during assessment.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionSharingSettingResults</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionSharingSettingResults</shortDescription>
+        <value>Here&apos;s a technical analysis showing all the sharing settings and sharing rules in this org related to objects mapped during assessment.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionSummaryAnalysis</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionSummaryAnalysis</shortDescription>
+        <value>Here&apos;s a technical analysis showing all the customizations in this org that can be easily replaced with the transition to FSC. This section also indicates the customizations that will require a more thorough review by an architect or developer for the transition, such as any custom code you may have.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionSummaryResults</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionSummaryResults</shortDescription>
+        <value>Here&apos;s a high-level view of how FSC features and customizations can be approached for possible migration. Use this information to create the first draft of your gap analysis. To get a closer look, click the link for each feature or customization for recommendations for specific changes. But remember: You&apos;re the Salesforce expert at your company. Leverage the usage data in each section to decide whether our recommendations are worth your effort. For example, if the report identifies AppExchange packages require a thoughtful rollout but no one is using them, cross that feature off your gap analysis.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleAnalysis</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleAnalysis</shortDescription>
+        <value>Migration Analysis</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleApproach</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleApproach</shortDescription>
+        <value>Transition Approach</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleIntro</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleIntro</shortDescription>
+        <value>Intro</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleOverallRecommendation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleOverallRecommendation</shortDescription>
+        <value>Recommended Transition Approach</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleProfile</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleProfile</shortDescription>
+        <value>Profile and Permission Analysis</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleRecommendation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleRecommendation</shortDescription>
+        <value>Suggested Steps</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleResults</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleResults</shortDescription>
+        <value>Assessment Results</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportSectionTitleWelcome</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportSectionTitleWelcome</shortDescription>
+        <value>Welcome</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableComponentName</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableComponentName</shortDescription>
+        <value>Component Name</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableComponentType</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableComponentType</shortDescription>
+        <value>Component Type</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableFeature</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableFeature</shortDescription>
+        <value>FSC Feature Transition</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTablePriority</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTablePriority</shortDescription>
+        <value>Priority</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableRecommendation</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableRecommendation</shortDescription>
+        <value>Recommendation</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableSharingExternal</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableSharingExternal</shortDescription>
+        <value>External Sharing</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableSharingInternal</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableSharingInternal</shortDescription>
+        <value>Internal Sharing</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableTransitionFrom</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableTransitionFrom</shortDescription>
+        <value>Transition From</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableTransitionTo</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableTransitionTo</shortDescription>
+        <value>Transition To FSC</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportTableUsersAssigned</fullName>
+        <categories>Assessment Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportTableUsersAssigned</shortDescription>
+        <value>Users Assigned</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportWelcomeCheckboxText</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportWelcomeCheckboxText</shortDescription>
+        <value>Hide this section on future assessment reports</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentReportWelcomeText</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentReportWelcomeText</shortDescription>
+        <value>&lt;b&gt;This report shows the current status of your org and potentially impacted metadata/functionality, in regards to your potential transition. Please review the recommendations and items reported below, and assess the business impact of accommodating these recommendations before proceeding to package creation/installation.&lt;/b&gt;</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentResultsEmptyTable</fullName>
+        <categories>Assessment, Report</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentResultsEmptyTable</shortDescription>
+        <value>Our scan has indicated that there are no recommendations in this area for your transition.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentSandboxDisclaimer</fullName>
+        <categories>Assessment, Intro</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentSandboxDisclaimer</shortDescription>
+        <value>&lt;b&gt;You are currently running this tool in a non-production instance of Salesforce.&lt;/b&gt; Please also take your production organization&apos;s record counts into consideration when running the tool in this environment.</value>
+    </labels>
+    <labels>
+        <fullName>AssessmentStatusMapping</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AssessmentStatusMapping</shortDescription>
+        <value>Mapping</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeCheckbox</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeCheckbox</shortDescription>
+        <value>Checkbox</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeCurrency</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeCurrency</shortDescription>
+        <value>Currency</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeDate</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeDate</shortDescription>
+        <value>Date</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeDatetime</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeDatetime</shortDescription>
+        <value>Date/Time</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeEmail</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeEmail</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeLocation</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeLocation</shortDescription>
+        <value>Location</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeLongText</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeLongText</shortDescription>
+        <value>Text Area (Long)</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeLookup</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeLookup</shortDescription>
+        <value>Lookup Relationship</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeMasterDetail</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeMasterDetail</shortDescription>
+        <value>Master-Detail Relationship</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeMultiSelect</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeMultiSelect</shortDescription>
+        <value>Picklist (Multi-Select)</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeNumber</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeNumber</shortDescription>
+        <value>Number</value>
+    </labels>
+    <labels>
+        <fullName>DataTypePercent</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypePercent</shortDescription>
+        <value>Percent</value>
+    </labels>
+    <labels>
+        <fullName>DataTypePhone</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypePhone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>DataTypePicklist</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypePicklist</shortDescription>
+        <value>Picklist</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeRichText</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeRichText</shortDescription>
+        <value>Text Area (Rich)</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeText</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeText</shortDescription>
+        <value>Text</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeTextArea</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeTextArea</shortDescription>
+        <value>Text Area</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeTime</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeTime</shortDescription>
+        <value>Time</value>
+    </labels>
+    <labels>
+        <fullName>DataTypeUrl</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DataTypeUrl</shortDescription>
+        <value>URL</value>
+    </labels>
+    <labels>
+        <fullName>DeploymentChecklistDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DeploymentChecklistDescription</shortDescription>
+        <value>Below are components that can be automatically migrated over to the Financial Services Cloud data model. This includes new custom fields or record types that were introduced in the mapping process as well as any existing components on custom objects that can be transferred to target FSC objects. Select which components you wish to migrate and click Generate Deployment Package to create a package available for deployment to this org or another.</value>
+    </labels>
+    <labels>
+        <fullName>DeploymentChecklistTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DeploymentChecklistTitle</shortDescription>
+        <value>Deployment Checklist</value>
+    </labels>
+    <labels>
+        <fullName>DeploymentPackageProcessing</fullName>
+        <categories>Deployment Checklist</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DeploymentPackageProcessing</shortDescription>
+        <value>Generating deployment package, please wait or come back later</value>
+    </labels>
+    <labels>
+        <fullName>FSCRetailBankingDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FSCRetailBankingDescription</shortDescription>
+        <value>Select to transition to FSC Retail Banking. Get a 360-degree view of customers with Retail Banking, a Financial Services Cloud Lightning app. Bankers can also easily manage high-volume transactions on one screen with the Retail Banking Console. The information bankers need is supported with new objects, fields, and record types for loans, deposits, and more.</value>
+    </labels>
+    <labels>
+        <fullName>FSCWealthDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FSCWealthDescription</shortDescription>
+        <value>Select to transition to FSC Wealth Management. Give your financial advisors a holistic view of customers with Wealth Management, a Financial Services Cloud Lightning app. Empower your advisors to deliver the personalized, proactive service that clients expect. Accelerate user productivity with technology that helps them engage with clients like never before, and build deeper, lasting, more profitable relationships.</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameARC</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameARC</shortDescription>
+        <value>Actionable Relationship Center (ARC)</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameActionPlan</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameActionPlan</shortDescription>
+        <value>Action Plan</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameBranchManagement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameBranchManagement</shortDescription>
+        <value>Branch Management</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameCompliantDataSharing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameCompliantDataSharing</shortDescription>
+        <value>Compliant Data Sharing (CDS)</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameCustomerRoles</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameCustomerRoles</shortDescription>
+        <value>Customer Roles</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameDocTracking</fullName>
+        <categories>Report, Feature</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameDocTracking</shortDescription>
+        <value>Document Tracking and Approvals</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameFinancialAccounts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameFinancialAccounts</shortDescription>
+        <value>Financial Accounts</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameLifeEvents</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameLifeEvents</shortDescription>
+        <value>Life Events / Milestones</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameRelationshipGroups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameRelationshipGroups</shortDescription>
+        <value>Relationship Groups</value>
+    </labels>
+    <labels>
+        <fullName>FeatureNameRollups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureNameRollups</shortDescription>
+        <value>Rollups</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonARC</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonARC</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonActionPlan</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonActionPlan</shortDescription>
+        <value>Useful for B2C. This feature will be available to use when needed.</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonCompliantDataSharing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonCompliantDataSharing</shortDescription>
+        <value>Transition to Compliant Data Sharing to configure advanced data sharing rules.</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonCustomerRoles</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonCustomerRoles</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonDefault</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonDefault</shortDescription>
+        <value>This feature will be available to use when needed</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonDocTracking</fullName>
+        <categories>Report, Feature</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonDocTracking</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonFinancialAccounts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonFinancialAccounts</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonLifeEvents</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonLifeEvents</shortDescription>
+        <value>Useful for B2C or B2B. This feature will be available to use when needed</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonRelationshipGroups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonRelationshipGroups</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>FeatureReasonRollups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FeatureReasonRollups</shortDescription>
+        <value>Recommended to rollout immediately with the FSC transition</value>
+    </labels>
+    <labels>
+        <fullName>HelpAdminGuideDesc</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpAdminGuideDesc</shortDescription>
+        <value>In-depth information about the configuration and automation of Financial Services Cloud.</value>
+    </labels>
+    <labels>
+        <fullName>HelpAdminGuideTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpAdminGuideTitle</shortDescription>
+        <value>Admin Guide</value>
+    </labels>
+    <labels>
+        <fullName>HelpFSCCDSTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpFSCCDSTitle</shortDescription>
+        <value>Compliant Data Sharing in Financial Services Cloud</value>
+    </labels>
+    <labels>
+        <fullName>HelpFSCDataModelTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpFSCDataModelTitle</shortDescription>
+        <value>FSC Data Model Overview</value>
+    </labels>
+    <labels>
+        <fullName>HelpFSCInstallTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpFSCInstallTitle</shortDescription>
+        <value>Financial Services Cloud Installation Guide</value>
+    </labels>
+    <labels>
+        <fullName>HelpReleaseNotesTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpReleaseNotesTitle</shortDescription>
+        <value>Current Release Notes (Spring &apos;21)</value>
+    </labels>
+    <labels>
+        <fullName>HelpTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpTitle</shortDescription>
+        <value>Getting Started With Financial Services Cloud</value>
+    </labels>
+    <labels>
+        <fullName>HelpTrailblazerTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpTrailblazerTitle</shortDescription>
+        <value>Financial Services Cloud Trailblazer Community</value>
+    </labels>
+    <labels>
+        <fullName>HelpTrailheadDesc</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpTrailheadDesc</shortDescription>
+        <value>Explore the many features of Financial Services Cloud via our specialized learning paths.</value>
+    </labels>
+    <labels>
+        <fullName>HelpTrailheadTitle</fullName>
+        <categories>Help</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>HelpTrailheadTitle</shortDescription>
+        <value>Trailhead</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescAARelation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescAARelation</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_accountaccountrelation.htm?search_text=AccountAccount&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescACRelation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescACRelation</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_accountcontactrelation.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescAccount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescAccount</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_objects_account.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescBanker</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescBanker</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_banker.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescBranchUnit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescBranchUnit</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_branchunit.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescBranchUnitBM</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescBranchUnitBM</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_branchunitbusinessmember.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescBranchUnitCust</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescBranchUnitCust</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_branchunitcustomer.htm&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescCCRelation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescCCRelation</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_contactcontactrelation.htm?search_text=ContactContact&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescFinAccount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescFinAccount</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_financialaccount.htm?search_text=FinancialAccount&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>IndustriesObjectDescFinAccountRole</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IndustriesObjectDescFinAccountRole</shortDescription>
+        <value>More information can be found here: &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_object_reference.meta/financial_services_cloud_object_reference/sforce_api_objects_financialaccountrole.htm?search_text=FinanicalAccountRole&quot; target=&quot;_blank&quot;&gt;API Documentation&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>MappingAdditionalDesc</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingAdditionalDesc</shortDescription>
+        <value>Based on your organization&apos;s needs, you may wish to map other existing objects within your org to other Financial Services Cloud objects. You can make these selections below:</value>
+    </labels>
+    <labels>
+        <fullName>MappingAdditionalTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingAdditionalTitle</shortDescription>
+        <value>Additional Mappings</value>
+    </labels>
+    <labels>
+        <fullName>MappingDetailsTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDetailsTitle</shortDescription>
+        <value>Mapping Details</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnConflict</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnConflict</shortDescription>
+        <value>Conflict for Transition?</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnDataType</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnDataType</shortDescription>
+        <value>Data Type</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnDecimalPlaces</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnDecimalPlaces</shortDescription>
+        <value>Decimal Places</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnDest</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnDest</shortDescription>
+        <value>Destination</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnDestObject</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnDestObject</shortDescription>
+        <value>Future Object</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnLength</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnLength</shortDescription>
+        <value>Length</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnRequired</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnRequired</shortDescription>
+        <value>Is Required?</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnSection</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnSection</shortDescription>
+        <value>Section</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnSource</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnSource</shortDescription>
+        <value>Source</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnSourceObject</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnSourceObject</shortDescription>
+        <value>Org Object</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocColumnType</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocColumnType</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocExtension</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocExtension</shortDescription>
+        <value>xlsx</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocSectionAdditional</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocSectionAdditional</shortDescription>
+        <value>Additional</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocTitle</shortDescription>
+        <value>MappingConfig</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocTypeField</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocTypeField</shortDescription>
+        <value>Field</value>
+    </labels>
+    <labels>
+        <fullName>MappingDocTypeRT</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingDocTypeRT</shortDescription>
+        <value>Record Type</value>
+    </labels>
+    <labels>
+        <fullName>MappingFieldAdd</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingFieldAdd</shortDescription>
+        <value>Add Field Mapping</value>
+    </labels>
+    <labels>
+        <fullName>MappingFieldDest</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingFieldDest</shortDescription>
+        <value>FSC Field</value>
+    </labels>
+    <labels>
+        <fullName>MappingFieldSource</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingFieldSource</shortDescription>
+        <value>Org Field</value>
+    </labels>
+    <labels>
+        <fullName>MappingFieldTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingFieldTitle</shortDescription>
+        <value>Fields</value>
+    </labels>
+    <labels>
+        <fullName>MappingIntro</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingIntro</shortDescription>
+        <value>Please select which objects (if any) you wish to map to native Financial Service Cloud objects:</value>
+    </labels>
+    <labels>
+        <fullName>MappingObjectAdd</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingObjectAdd</shortDescription>
+        <value>Add Mapping</value>
+    </labels>
+    <labels>
+        <fullName>MappingObjectDest</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingObjectDest</shortDescription>
+        <value>FSC Object</value>
+    </labels>
+    <labels>
+        <fullName>MappingObjectRemove</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingObjectRemove</shortDescription>
+        <value>Remove Object Mapping</value>
+    </labels>
+    <labels>
+        <fullName>MappingObjectSource</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingObjectSource</shortDescription>
+        <value>Org Object</value>
+    </labels>
+    <labels>
+        <fullName>MappingRTAdd</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRTAdd</shortDescription>
+        <value>Add Record Type Mapping</value>
+    </labels>
+    <labels>
+        <fullName>MappingRTDest</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRTDest</shortDescription>
+        <value>FSC Record Type</value>
+    </labels>
+    <labels>
+        <fullName>MappingRTSource</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRTSource</shortDescription>
+        <value>Org Record Type</value>
+    </labels>
+    <labels>
+        <fullName>MappingRTTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRTTitle</shortDescription>
+        <value>Record Types</value>
+    </labels>
+    <labels>
+        <fullName>MappingRecommendedDesc</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRecommendedDesc</shortDescription>
+        <value>Based on your responses on the previous screen, these are the object and field mappings we recommend as you migrate over to Financial Services Cloud. Please check and verify the following:</value>
+    </labels>
+    <labels>
+        <fullName>MappingRecommendedTitle</fullName>
+        <categories>Mapping</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingRecommendedTitle</shortDescription>
+        <value>Recommended Mappings</value>
+    </labels>
+    <labels>
+        <fullName>MappingSectionAnswerBranches</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MappingSectionAnswerBranches</shortDescription>
+        <value>I currently track branches in Salesforce</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaActive</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaActive</shortDescription>
+        <value>Active?</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaApiName</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaApiName</shortDescription>
+        <value>API Name</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaChildRelationship</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaChildRelationship</shortDescription>
+        <value>Child Relationship Name</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaConnectedObject</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaConnectedObject</shortDescription>
+        <value>Related Object</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaConnectedObjectPlaceholder</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaConnectedObjectPlaceholder</shortDescription>
+        <value>-- Select Object --</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaDecimals</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaDecimals</shortDescription>
+        <value>Decimal Places</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaDefaultChecked</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaDefaultChecked</shortDescription>
+        <value>Checked</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaDefaultUnchecked</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaDefaultUnchecked</shortDescription>
+        <value>Unchecked</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaDefaultValue</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaDefaultValue</shortDescription>
+        <value>Default Value</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaDesc</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaDesc</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaExternalId</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaExternalId</shortDescription>
+        <value>External ID</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaHelpText</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaHelpText</shortDescription>
+        <value>Help Text</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaLabel</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaLabel</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaLength</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaLength</shortDescription>
+        <value>Length</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaLocationNotation</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaLocationNotation</shortDescription>
+        <value>Latitude and Longitude Display Notation</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaPicklistValues</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaPicklistValues</shortDescription>
+        <value>Values</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaRequired</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaRequired</shortDescription>
+        <value>Required?</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaReviewSummary</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaReviewSummary</shortDescription>
+        <value>Please verify that the following information is correct:</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaTitleField</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaTitleField</shortDescription>
+        <value>New Field</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaTitleRecordType</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaTitleRecordType</shortDescription>
+        <value>New Record Type</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaUnique</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaUnique</shortDescription>
+        <value>Unique?</value>
+    </labels>
+    <labels>
+        <fullName>NewMetaVisibleLines</fullName>
+        <categories>Mapping, New Meta</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMetaVisibleLines</shortDescription>
+        <value># Visible Lines</value>
+    </labels>
+    <labels>
+        <fullName>PackageDescriptionFSCExt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PackageDescriptionFSCExt</shortDescription>
+        <value>The unmanaged extension package provides field sets that configure how fields display in the client and household profiles.</value>
+    </labels>
+    <labels>
+        <fullName>PackageDescriptionFSCExtCommercial</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PackageDescriptionFSCExtCommercial</shortDescription>
+        <value>The unmanaged commercial banking extension package provides the commercial banking dashboard.</value>
+    </labels>
+    <labels>
+        <fullName>PackageDescriptionFSCExtReferral</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PackageDescriptionFSCExtReferral</shortDescription>
+        <value>The unmanaged referral package provides the retail banking dashboard.</value>
+    </labels>
+    <labels>
+        <fullName>PackageDescriptionFSCFlow</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PackageDescriptionFSCFlow</shortDescription>
+        <value>These sets of flows include mortgage, insurance, and retail banking flows. With Financial Services Cloud, you get the mortgage flows, by default. However, to get the insurance and retail banking flows, you must install the Lightning Flow for Financial Services Cloud package. The flows are installed as standard flow templates. You can clone the templates to customize them according to your business processes. &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_admin_guide.meta/financial_services_cloud_admin_guide/fsc_flows.htm&quot;&gt;More Information&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>PackageDescriptionFinancialServicesCloud</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PackageDescriptionFinancialServicesCloud</shortDescription>
+        <value>The managed package contains most of the Financial Services Cloud functionality. This functionality includes custom fields and objects, list views and profiles of clients and households, and administrative configurations. &lt;a href=&quot;https://www.salesforce.com/form/industries/financialservices-demo-form&quot;&gt;FSC Demo&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>QuestionBranchManagement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionBranchManagement</shortDescription>
+        <value>Do you have physical or virtual branches that you track where your customers originate?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionCustomerRepresentation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionCustomerRepresentation</shortDescription>
+        <value>How is your customer represented?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionExternalData</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionExternalData</shortDescription>
+        <value>Is external data represented in Salesforce (e.g. alerts, transactions)?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionFinancialAccounts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionFinancialAccounts</shortDescription>
+        <value>What type(s) of Financial Accounts (if any) do you capture in Salesforce?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionIndustry</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionIndustry</shortDescription>
+        <value>What industry product would you like to transition to?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionRelationshipGroupings</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionRelationshipGroupings</shortDescription>
+        <value>Do you group together your customers through any shared relationships?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionRollups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionRollups</shortDescription>
+        <value>Do these groups aggregate or summarize counts/sums of customer related products,services, or activities?</value>
+    </labels>
+    <labels>
+        <fullName>QuestionScreenDesc</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuestionScreenDesc</shortDescription>
+        <value>In order to better assist you in your potential transition to Financial Services Cloud, please take some time to answer the questions below:</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountHierarchyUsageHigh</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountHierarchyUsageHigh</shortDescription>
+        <value>Evaluate use of Account Hierarchy (Parent Account field on Account) and prepare to move to FSC Relationship Groups</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountHierarchyUsageHighReason1</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountHierarchyUsageHighReason1</shortDescription>
+        <value>Total Accounts: {0}</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountHierarchyUsageHighReason2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountHierarchyUsageHighReason2</shortDescription>
+        <value>Hierarchy Usage: {0}%</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountRelationsUsage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountRelationsUsage</shortDescription>
+        <value>Review custom relationship fields pointing to the Account object</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountRelationsUsageReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountRelationsUsageReason</shortDescription>
+        <value>Account Relationship: {0}.{1} - {2}</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountRollupCalculationUsage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountRollupCalculationUsage</shortDescription>
+        <value>Review custom rollup summary calculations on Account object that can be replaced by FSC rollup calculations</value>
+    </labels>
+    <labels>
+        <fullName>RecAccountRollupCalculationUsageReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAccountRollupCalculationUsageReason</shortDescription>
+        <value>Calculated Roll-Up Summary Field: {0}</value>
+    </labels>
+    <labels>
+        <fullName>RecActivityTooManyLookups</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecActivityTooManyLookups</shortDescription>
+        <value>You have too many lookup fields on the {0} object. FSC install requires room for {1} field per object.</value>
+    </labels>
+    <labels>
+        <fullName>RecActivityTooManyLookupsReasonTotal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecActivityTooManyLookupsReasonTotal</shortDescription>
+        <value>{0} Custom Lookup field limit per object: {1}</value>
+    </labels>
+    <labels>
+        <fullName>RecAdvancedCurrencyEnabled</fullName>
+        <categories>Report, Recommendations</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecAdvancedCurrencyEnabled</shortDescription>
+        <value>Your organization currently has Advanced Currency Management enabled. This feature is not supported by Financial Services Cloud. Please review and disable this feature for your transition.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeApexClass</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeApexClass</shortDescription>
+        <value>Custom code requires technical review and cannot be automatically migrated.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeApexPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeApexPage</shortDescription>
+        <value>Requires technical review. Consider retiring remaining Visualforce pages and migrate to Lightning Web Components where still applicable.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeApexTrigger</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeApexTrigger</shortDescription>
+        <value>Custom database triggers require technical review. Evaluate the logic and determine whether it is still optimal to perform calculations in Apex or if can be consolidated into a Before/After Flow trigger. https://architect.salesforce.com/design/decision-guides/trigger-automation</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeAuraComponentBundle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeAuraComponentBundle</shortDescription>
+        <value>Review Aura lightning component and make necessary code adjustments to apply on destination object. Consider migrating to LWC to optimize performance.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeAutomateDefault</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeAutomateDefault</shortDescription>
+        <value>{0} can be automatically migrated. Use the Deployment Checklist to select and generate changes.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeContactB2C</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeContactB2C</shortDescription>
+        <value>The Contact object must be converted into Person Account which is a record type on the Account object and includes all fields and relationships from both Account and Contact objects.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeCustomField</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeCustomField</shortDescription>
+        <value>Custom Fields that are mapped to target FSC objects will be matched to corresponding fields or replicated where missing.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeCustomObject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeCustomObject</shortDescription>
+        <value>Custom Objects can be transitioned to the FSC object model and will require data migration to move record data into the destination object.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeDefault</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeDefault</shortDescription>
+        <value>{0} requires manual review and cannot be automatically migrated.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeFlexiPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeFlexiPage</shortDescription>
+        <value>Lightning Pages need to be reviewed and will need to be manually updated to reflect FSC target objects.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeFlow</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeFlow</shortDescription>
+        <value>Flows and Process Builder definitions need to be reviewed and updated to point to new FSC objects. Consider moving Process Builder flows to Before/After Flow Triggers to optimize performance. https://architect.salesforce.com/design/decision-guides/trigger-automation</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeStandardObject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeStandardObject</shortDescription>
+        <value>Standard Objects can be transitioned to the FSC object model and will require data migration to move record data into the destination object.</value>
+    </labels>
+    <labels>
+        <fullName>RecComponentTypeWorkflowRule</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecComponentTypeWorkflowRule</shortDescription>
+        <value>Workflow rules need to be reviewed. They can be migrated to FSC but consider transitioning Workflows to Before/After Flow Triggers to optimize performance. https://architect.salesforce.com/design/decision-guides/trigger-automation</value>
+    </labels>
+    <labels>
+        <fullName>RecCurrencySettings</fullName>
+        <categories>Report, Recommendations</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecCurrencySettings</shortDescription>
+        <value>The following Currency settings may impact your organization:</value>
+    </labels>
+    <labels>
+        <fullName>RecCurrencySettingsReasonMultiCurrency</fullName>
+        <categories>Report, Recommendations</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecCurrencySettingsReasonMultiCurrency</shortDescription>
+        <value>Your organization currently has &quot;Multiple Currencies&quot; enabled; certain functionality may be impacted with the transition. Please check the &quot;Feature Limitations&quot; section &lt;a href=&quot;https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_admin_guide.meta/financial_services_cloud_admin_guide/fsc_admin_gaps_limitations.htm&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; for more information.</value>
+    </labels>
+    <labels>
+        <fullName>RecCustomObjectConflict</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecCustomObjectConflict</shortDescription>
+        <value>Custom Object Conflicts</value>
+    </labels>
+    <labels>
+        <fullName>RecCustomObjectConflictReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecCustomObjectConflictReason</shortDescription>
+        <value>The custom object &quot;{0}&quot; will be replaced with FSC.</value>
+    </labels>
+    <labels>
+        <fullName>RecHasFsc</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasFsc</shortDescription>
+        <value>You already have FSC installed! You are now ready to take advantage of its features. See next steps.</value>
+    </labels>
+    <labels>
+        <fullName>RecHasLicensedFeature</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasLicensedFeature</shortDescription>
+        <value>You have the users with the following Salesforce license types please consider compatibility with your industry transition</value>
+    </labels>
+    <labels>
+        <fullName>RecHasLicensedFeatureReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasLicensedFeatureReason</shortDescription>
+        <value>{0} used licenses: {1}/{2}</value>
+    </labels>
+    <labels>
+        <fullName>RecHasNoContactMultipleAccounts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasNoContactMultipleAccounts</shortDescription>
+        <value>Please enable Contact to Multiple Accounts: &lt;a target=&quot;_blank&quot; href=&quot;/lightning/setup/AccountSettings/home&quot;&gt;Here&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>RecHasNoFsc</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasNoFsc</shortDescription>
+        <value>You aren&apos;t quite ready to install FSC. Here are some things to check:</value>
+    </labels>
+    <labels>
+        <fullName>RecHasNoFscLicenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasNoFscLicenses</shortDescription>
+        <value>Your organization must acquire FSC licenses to proceed with installation and upgrade. Please reach out to your Salesforce Account Executive for next steps.</value>
+    </labels>
+    <labels>
+        <fullName>RecHasNoLex</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasNoLex</shortDescription>
+        <value>Please enable Lightning Experience: &lt;a target=&quot;_blank&quot; href=&quot;/lightning/setup/EnableLightningExperience/home&quot;&gt;Here&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>RecHasNoPersonAccounts</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecHasNoPersonAccounts</shortDescription>
+        <value>Please enable Person Accounts to use B2C components of FSC: &lt;a target=&quot;_blank&quot; href=&quot;/lightning/setup/AccountSettings/home&quot;&gt;Here&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>RecIsvMarketingCloud</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecIsvMarketingCloud</shortDescription>
+        <value>We detected the presence of an active Marketing Cloud installation in your org. By implementing the new Financial Services Cloud data model, you will be introducing new objects. We recommend auditing your Marketing Cloud Contact model and existing data extensions, queries, journeys, and attribute groups to ensure the new objects are utilized for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>RecIsvPackageConflict</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecIsvPackageConflict</shortDescription>
+        <value>ISV Package Conflicts</value>
+    </labels>
+    <labels>
+        <fullName>RecIsvPackageConflictReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecIsvPackageConflictReason</shortDescription>
+        <value>{0} will conflict with FSC and should be reviewed.</value>
+    </labels>
+    <labels>
+        <fullName>RecIsvPardot</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecIsvPardot</shortDescription>
+        <value>We detected the presence of an active Pardot installation in your org. By moving to the new Financial Services Cloud data model, you will be introducing new objects. We recommend auditing your Pardot Prospect Contact Model and existing dynamic lists, automation rules, and engagement programs to ensure the new objects are utilized for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>RecObjectTooManyFields</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecObjectTooManyFields</shortDescription>
+        <value>You have too many custom fields on the following objects. FSC install requires room for more fields to add.</value>
+    </labels>
+    <labels>
+        <fullName>RecObjectTooManyFieldsReasonTotal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecObjectTooManyFieldsReasonTotal</shortDescription>
+        <value>{0} Custom Fields: {1} -- Please remove {2} field(s)</value>
+    </labels>
+    <labels>
+        <fullName>RecOrgFscInstallationReady</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecOrgFscInstallationReady</shortDescription>
+        <value>You are ready to install FSC!</value>
+    </labels>
+    <labels>
+        <fullName>RecRecordHighDataVolume</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecRecordHighDataVolume</shortDescription>
+        <value>You have a large volume of data that could impact the migration</value>
+    </labels>
+    <labels>
+        <fullName>RecRecordHighDataVolumeReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecRecordHighDataVolumeReason</shortDescription>
+        <value>There are {0} {1} records</value>
+    </labels>
+    <labels>
+        <fullName>RecRecordHighDataVolumeReasonContact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecRecordHighDataVolumeReasonContact</shortDescription>
+        <value>Consider using PK Chunking to prevent hitting limits when performing Person Account conversion or migrating data to Contacts to Multiple Accounts</value>
+    </labels>
+    <labels>
+        <fullName>RecRecordHighDataVolumeReasonStorage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecRecordHighDataVolumeReasonStorage</shortDescription>
+        <value>Review your current storage usage and consider any overages if Contacts are migrated to Person Accounts: &lt;a href=&quot;/lightning/setup/CompanyResourceDisk/home&quot; target=&quot;_blank&quot;&gt;Storage Usage&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCDSRecommendation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCDSRecommendation</shortDescription>
+        <value>Move to Compliant Data Sharing.</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCheckMatchingReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCheckMatchingReason</shortDescription>
+        <value>The current Sharing Model for {0} and {1} are both {2}</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCheckMismatchReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCheckMismatchReason</shortDescription>
+        <value>The current Sharing Model for {0} is {1} while the Sharing Model for the mapped object {2} is {3}.</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCheckPersonAccountReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCheckPersonAccountReason</shortDescription>
+        <value>Move Contact Sharing to Account and update Contact sharing to Controlled By Parent.</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCheckTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCheckTitle</shortDescription>
+        <value>Sharing Settings</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCompliantDataSharingReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCompliantDataSharingReason</shortDescription>
+        <value>Apex Sharing has been detected on the Account and/or Opportunity within Apex Code, please consider moving to Compliant Data Sharing.</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsCustomObjectReplacesStandard</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsCustomObjectReplacesStandard</shortDescription>
+        <value>Migrating Custom Objects to Standard FSC objects will enforce standard sharing settings and your custom Sharing Settings may either become obsolete or may need to be reimplemented.</value>
+    </labels>
+    <labels>
+        <fullName>RecSharingSettingsHasApexSharing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecSharingSettingsHasApexSharing</shortDescription>
+        <value>Custom Apex Sharing Reason entries have been found and/or References to Custom Object Share objects have been found in Apex Code.</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachBrownfieldClean</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachBrownfieldClean</shortDescription>
+        <value>Clean Upgrade</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachBrownfieldCleanSummary</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachBrownfieldCleanSummary</shortDescription>
+        <value>This org can be upgraded to FSC with a low level of impact from conflicting components or existing customizations</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachBrownfieldComplex</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachBrownfieldComplex</shortDescription>
+        <value>Complex Upgrade</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachBrownfieldComplexSummary</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachBrownfieldComplexSummary</shortDescription>
+        <value>This org can be upgraded to FSC with a high level of impact from conflicting components or existing customizations</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachGreenfield</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachGreenfield</shortDescription>
+        <value>New Org Transition</value>
+    </labels>
+    <labels>
+        <fullName>RecUpgradeApproachGreenfieldSummary</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RecUpgradeApproachGreenfieldSummary</shortDescription>
+        <value>The recommended approach is to move to a fresh Salesforce org with FSC pre-configured and migrate your data and users into that environment. A deployment package will be generated to assist your transition.</value>
+    </labels>
+    <labels>
+        <fullName>ReportCopyMappingDocLink</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ReportCopyMappingDocLink</shortDescription>
+        <value>Copy Mapping Export Link</value>
+    </labels>
+    <labels>
+        <fullName>SharingRuleReimplement</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SharingRuleReimplement</shortDescription>
+        <value>Sharing Criteria/Owner rules may have to be reimplemented.</value>
+    </labels>
+    <labels>
+        <fullName>SharingSettingsApexReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SharingSettingsApexReason</shortDescription>
+        <value>Custom Apex Sharing Reason settings may either become obsolete or may need to be reimplemented.</value>
+    </labels>
+    <labels>
+        <fullName>SharingSettingsCDSReason</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SharingSettingsCDSReason</shortDescription>
+        <value>Apex class contains reference to a Compliant Data Sharing object, where the Apex is creating Share object entries.</value>
+    </labels>
+    <labels>
+        <fullName>ToastMessageAutoMap</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastMessageAutoMap</shortDescription>
+        <value>Auto-Mapping Complete.</value>
+    </labels>
+    <labels>
+        <fullName>ToastMessageError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastMessageError</shortDescription>
+        <value>An error occurred. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>ToastMessageLinkCopied</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastMessageLinkCopied</shortDescription>
+        <value>Link copied!</value>
+    </labels>
+    <labels>
+        <fullName>ToastMessageMappingSaved</fullName>
+        <categories>Toast</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastMessageMappingSaved</shortDescription>
+        <value>Mapping has been saved.</value>
+    </labels>
+    <labels>
+        <fullName>ToastTitleError</fullName>
+        <categories>Toast</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastTitleError</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>ToastTitleSuccess</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToastTitleSuccess</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>TypeApprovalProcess</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeApprovalProcess</shortDescription>
+        <value>Approval Process</value>
+    </labels>
+    <labels>
+        <fullName>TypeCustomObject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeCustomObject</shortDescription>
+        <value>Custom Object</value>
+    </labels>
+    <labels>
+        <fullName>TypeEmailAlert</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeEmailAlert</shortDescription>
+        <value>Email Alert</value>
+    </labels>
+    <labels>
+        <fullName>TypeLightningPage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeLightningPage</shortDescription>
+        <value>Lightning Page</value>
+    </labels>
+    <labels>
+        <fullName>TypeOutboundMessage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeOutboundMessage</shortDescription>
+        <value>Outbound Message</value>
+    </labels>
+    <labels>
+        <fullName>TypePageLayout</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypePageLayout</shortDescription>
+        <value>Page Layout</value>
+    </labels>
+    <labels>
+        <fullName>TypeProfilesPermissionSets</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeProfilesPermissionSets</shortDescription>
+        <value>Profiles &amp; Permission Sets</value>
+    </labels>
+    <labels>
+        <fullName>TypeStandardObject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeStandardObject</shortDescription>
+        <value>Standard Object</value>
+    </labels>
+    <labels>
+        <fullName>TypeVisualforcePage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TypeVisualforcePage</shortDescription>
+        <value>Visualforce Page</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentPageTabChecklist</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentPageTabChecklist</shortDescription>
+        <value>Deployment Checklist</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentPageTabDeploy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentPageTabDeploy</shortDescription>
+        <value>Deploy Changes</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentPageTabInstall</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentPageTabInstall</shortDescription>
+        <value>Install Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentPageTabReport</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentPageTabReport</shortDescription>
+        <value>Report</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentPageTabRollout</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentPageTabRollout</shortDescription>
+        <value>Rollout Summary</value>
+    </labels>
+    <labels>
+        <fullName>UIAssessmentTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIAssessmentTitle</shortDescription>
+        <value>FSC Transition Assistant</value>
+    </labels>
+    <labels>
+        <fullName>UIBackButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIBackButtonText</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>UIButtonGenerateDeploymentPackage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIButtonGenerateDeploymentPackage</shortDescription>
+        <value>Generate Deployment Package</value>
+    </labels>
+    <labels>
+        <fullName>UICancelButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UICancelButtonText</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>UICloseButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UICloseButtonText</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>UICompleteAssessmentText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UICompleteAssessmentText</shortDescription>
+        <value>Complete Assessment</value>
+    </labels>
+    <labels>
+        <fullName>UIConfirmButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIConfirmButtonText</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>UIContinueButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIContinueButtonText</shortDescription>
+        <value>Continue</value>
+    </labels>
+    <labels>
+        <fullName>UIDeployTableColumnComponentName</fullName>
+        <categories>Deployment Checklist</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeployTableColumnComponentName</shortDescription>
+        <value>Component Name</value>
+    </labels>
+    <labels>
+        <fullName>UIDeployTableColumnComponentType</fullName>
+        <categories>Deployment Checklist</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeployTableColumnComponentType</shortDescription>
+        <value>Component Type</value>
+    </labels>
+    <labels>
+        <fullName>UIDeployTableColumnSourceObject</fullName>
+        <categories>Deployment Checklist</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeployTableColumnSourceObject</shortDescription>
+        <value>Source Object</value>
+    </labels>
+    <labels>
+        <fullName>UIDeployTableColumnTargetObject</fullName>
+        <categories>Deployment Checklist</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeployTableColumnTargetObject</shortDescription>
+        <value>Target FSC Object</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableAvailableDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableAvailableDescriptionText</shortDescription>
+        <value>The following packages are available for deployment once the current deployment is complete if Financial Services Cloud is installed. They can also be downloaded for use in another environment.</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableButtonDeploy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableButtonDeploy</shortDescription>
+        <value>Deploy</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableDeployedDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableDeployedDescriptionText</shortDescription>
+        <value>The following packages have been successfully deployed.</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableDescriptionText</shortDescription>
+        <value>The following packages are available for deployment if Financial Services Cloud is installed. They can also be downloaded for use in another environment.</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableErrorDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableErrorDescriptionText</shortDescription>
+        <value>We weren&apos;t able to deploy the packages listed below for the following reasons:</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeader</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeader</shortDescription>
+        <value>Deploy Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderAssessment</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderAssessment</shortDescription>
+        <value>Assessment</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderAvailable</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderAvailable</shortDescription>
+        <value>Available Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderDate</shortDescription>
+        <value>Deployment Created Date</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderDeployed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderDeployed</shortDescription>
+        <value>Deployed Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderDeployment</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderDeployment</shortDescription>
+        <value>Deployment</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderDescription</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderEndDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderEndDate</shortDescription>
+        <value>Deployment End Date</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderError</shortDescription>
+        <value>Deployment Failed</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderInProgress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderInProgress</shortDescription>
+        <value>Deployment In Progress</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableHeaderStartDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableHeaderStartDate</shortDescription>
+        <value>Deployment Start Date</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableInProgressDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableInProgressDescriptionText</shortDescription>
+        <value>&lt;p&gt;The following deployments are in progress. The page will refresh once complete. You can also monitor the deployment &lt;a href=&quot;/lightning/setup/DeployStatus/home&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</value>
+    </labels>
+    <labels>
+        <fullName>UIDeploymentTableLoadingText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIDeploymentTableLoadingText</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>UIFinishButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIFinishButtonText</shortDescription>
+        <value>Finish</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableActionClone</fullName>
+        <categories>Assessment, Intro</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableActionClone</shortDescription>
+        <value>Clone</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableActionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableActionText</shortDescription>
+        <value>Resume</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableHeaderDate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableHeaderDate</shortDescription>
+        <value>Date Started</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableHeaderDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableHeaderDescription</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableHeaderName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableHeaderName</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>UIIntroTableHeaderStatus</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIIntroTableHeaderStatus</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>UILoadingText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UILoadingText</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>UINewAssessmentButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UINewAssessmentButtonText</shortDescription>
+        <value>New Assessment</value>
+    </labels>
+    <labels>
+        <fullName>UINextButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UINextButtonText</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableButtonText</shortDescription>
+        <value>Install Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableDescriptionText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableDescriptionText</shortDescription>
+        <value>The following Financial Services Cloud packages are available and recommended for installation in this organization. Once FSC is installed you can proceed to deploying changes generated by this tool to complete the transition.</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableErrorDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableErrorDescription</shortDescription>
+        <value>We weren&apos;t able to install the packages listed below for the following reasons:                      &lt;/br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableErrorHeader</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableErrorHeader</shortDescription>
+        <value>Error Details</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableHeaderDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableHeaderDescription</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableHeaderName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableHeaderName</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableHeaderText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableHeaderText</shortDescription>
+        <value>Install Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableHeaderVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableHeaderVersion</shortDescription>
+        <value>Version</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableInstallInProgressText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableInstallInProgressText</shortDescription>
+        <value>An installation is currently in progress.</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableInstalledDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableInstalledDescription</shortDescription>
+        <value>The following Financial Services Cloud packages have been installed into your organization successfully.</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableInstalledHeader</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableInstalledHeader</shortDescription>
+        <value>Installed Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableInstallingDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableInstallingDescription</shortDescription>
+        <value>The following Financial Services Cloud packages are currently being installed into your organization.</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableInstallingHeader</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableInstallingHeader</shortDescription>
+        <value>Installation In Progress</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableLoadingText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableLoadingText</shortDescription>
+        <value>Loading</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableNoResultsText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableNoResultsText</shortDescription>
+        <value>No Results Found</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableRecommendedDescription</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableRecommendedDescription</shortDescription>
+        <value>The following Financial Services Cloud packages are available and recommended for installation in this organization. Once the pending installation is complete you can proceed to deploying changes generated by this tool to complete the transition.</value>
+    </labels>
+    <labels>
+        <fullName>UIPackageTableRecommendedHeader</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPackageTableRecommendedHeader</shortDescription>
+        <value>Recommended Packages</value>
+    </labels>
+    <labels>
+        <fullName>UIPicklistPlaceholderText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIPicklistPlaceholderText</shortDescription>
+        <value>Select a Value</value>
+    </labels>
+    <labels>
+        <fullName>UISaveButtonText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UISaveButtonText</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>UISaveProgressText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UISaveProgressText</shortDescription>
+        <value>Pause Assessment</value>
+    </labels>
+    <labels>
+        <fullName>UIStartAssessmentText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIStartAssessmentText</shortDescription>
+        <value>Start Assessment</value>
+    </labels>
+    <labels>
+        <fullName>UIVerticalBanking</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIVerticalBanking</shortDescription>
+        <value>Banking</value>
+    </labels>
+    <labels>
+        <fullName>UIVerticalWealth</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UIVerticalWealth</shortDescription>
+        <value>Wealth</value>
+    </labels>
+</CustomLabels>

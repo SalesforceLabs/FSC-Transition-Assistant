@@ -1,0 +1,124 @@
+<template>
+    <div class="introScreen">
+        <template if:true={isSandbox}>
+            <div class="disclaimerContainer">
+                <div class="slds-notify slds-notify_alert" role="alert">
+                    <span class="slds-assistive-text">{label.UISandboxDisclaimer}</span>
+                    <span class="slds-icon_container slds-icon-utility-warning slds-m-right_x-small">
+                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+                      </svg>
+                    </span>
+                    <h2><lightning-formatted-rich-text value={label.UISandboxDisclaimer}></lightning-formatted-rich-text></h2>
+                  </div>
+            </div>
+        </template>
+
+        <div class="titleSection">
+            <div class="titleLeft">
+                <h2 class="slds-card__header-title">{cardTitle}</h2>
+            </div>
+            <div class="titleRight">
+                <template if:true={showNewButton}>
+                    <lightning-button label={label.UINewAssessmentButtonText} onclick={newAssessment}></lightning-button>
+                </template>              
+            </div>
+        </div>
+        <template if:true={showNewButton}>
+            <br/>
+            <lightning-formatted-rich-text class="introDescription" value={label.AssessmentIntroDesc}></lightning-formatted-rich-text>
+            <!-- <lightning-button label={label.UINewAssessmentButtonText} slot="actions" onclick={newAssessment}></lightning-button> -->
+        </template>
+        
+        <div class="container slds-is-relative">
+            <template if:true={isLoading}>
+                <lightning-spinner variant="brand" alternative-text="Loading"></lightning-spinner>
+            </template>
+            <template if:true={showAssessmentTable}>
+                <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout slds-m-top_medium">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col" class="nameCol">
+                                <div class="slds-truncate" title={label.UIIntroTableHeaderName}>{label.UIIntroTableHeaderName}</div>
+                            </th>
+                            <th scope="col" class="descriptionCol">
+                                <div class="slds-truncate" title={label.UIIntroTableHeaderDescription}>{label.UIIntroTableHeaderDescription}</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title={label.UIIntroTableHeaderDate}>{label.UIIntroTableHeaderDate}</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title={label.UIIntroTableHeaderStatus}>{label.UIIntroTableHeaderStatus}</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title={label.UIIntroTableActionText}></div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={assessmentList} for:item="rec">
+                            <tr key={rec.AssessmentId} class="slds-hint-parent">
+                                <td data-label={label.UIIntroTableHeaderName} scope="row" role="gridcell">
+                                    <template if:true={rec.InProgress}>
+                                        <span class="slds-truncate">{rec.Name}</span>
+                                    </template>
+                                    <template if:false={rec.InProgress}>
+                                        <span class="slds-truncate"><a href="javascript:void(0);" onclick={navigateToRecordViewPage} tabindex="-1" data-id={rec.AssessmentId}>{rec.Name}</a></span>
+                                    </template>
+                                </td>
+                                <td data-label={label.UIIntroTableHeaderDescription} class="slds-cell-edit" role="gridcell">
+                                    <span class="slds-grid slds-grid_align-spread" data-id={rec.AssessmentId} onclick={toggleEdit}>
+                                        <span class="slds-truncate" data-id={rec.AssessmentId} onclick={toggleEdit}>{rec.Description}</span>
+                                        <lightning-button-icon icon-name="utility:edit" variant="container" alternative-text="Edit" class="slds-button slds-button_icon slds-cell-edit__button slds-m-left_x-small" title="Edit" data-id={rec.AssessmentId} onclick={toggleEdit}></lightning-button-icon>
+                                    </span>
+                                    <section class="slds-popover slds-popover_edit slds-hidden popoverPosition" data-id={rec.AssessmentId} role="dialog">
+                                        <div class="slds-popover__body">
+                                            <div class="slds-form-element slds-grid slds-wrap">
+                                                <div class="slds-form-element__control slds-grow">
+                                                    <lightning-textarea value={rec.Description} variant="label-hidden" onchange={updateDescription} onblur={toggleEdit} data-id={rec.AssessmentId} max-length="255"></lightning-textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </td>
+                                <td data-label={label.UIIntroTableHeaderDate} role="gridcell">
+                                    <lightning-formatted-date-time value={rec.CreatedDate}></lightning-formatted-date-time>
+                                </td>
+                                <td data-label={label.UIIntroTableHeaderStatus role="gridcell">
+                                    {rec.Status}
+                                </td>
+                                <td data-label={label.UIIntroTableActionText} role="gridcell">
+                                    <template if:true={rec.InProgress}>
+                                        <a onclick={resumeClicked} tabindex="-1" data-id={rec.AssessmentId} data-status={rec.Status}>{label.UIIntroTableActionText}</a>
+                                    </template>
+                                </td>
+                                <td data-label={label.UIIntroTableActionClone} role="gridcell">
+                                    <a onclick={cloneClicked} tabindex="-1" data-id={rec.AssessmentId}>{label.UIIntroTableActionClone}</a>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                    </table>
+            </template>
+
+            <template if:true={showAssessment}>
+                <div class="slds-text-heading_large titleStyle">{label.AssessmentIntroTitle}</div>
+                <div class="progressContainer slds-m-bottom_medium">
+                    <lightning-progress-indicator current-step={currentStep} type="base" variant="base">
+                        <lightning-progress-step label="Questionnaire" value="1"></lightning-progress-step>
+                        <lightning-progress-step label="Object Mapping" value="2"></lightning-progress-step>
+                        <lightning-progress-step label="Scanning Your Org" value="3"></lightning-progress-step>
+                        <lightning-progress-step label="Complete" value="4"></lightning-progress-step>
+                    </lightning-progress-indicator>
+                </div>
+                <template if:true={isStep1}>
+                    <c-question-screen onstoploading={stopLoading} onclosequestionscreen={reloadPage} onassessmentcomplete={goToMapping} assessmentid={assessmentId} industryname="Financial_Services_Cloud" fsc-defs={fscDefs}></c-question-screen>
+                </template>
+                
+                <template if:true={isStep2}>
+                    <c-mapping-screen onstoploading={stopLoading} onclosemappingscreen={reloadPage} assessmentid={assessmentId} onbackfrommapping={goBackToAssessment} fsc-schema={fscSchema} fsc-defs={fscDefs}></c-mapping-screen>
+                </template>
+            </template>
+        </div>  
+    </div>
+</template>

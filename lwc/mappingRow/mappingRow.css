@@ -1,0 +1,137 @@
+.recommendedSection {
+    margin-bottom: 1.5rem;
+}
+
+.mappingAccordion {
+    width: 100%;
+}
+
+.accordionSection {
+    margin-bottom: 1rem;
+}
+
+.featureDesc {
+    margin-bottom: 1rem;
+}
+
+.sectionHeader {
+    margin-bottom: .5rem;
+}
+
+.sectionDesc {
+    margin-bottom: 1.5rem;
+}
+
+.sectionLayout {
+    width: 100%;
+}
+
+.mappingRow {
+    align-items: center;
+    border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(221, 219, 218));
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.mappingRowOther {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mappingDetailRow {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mappingDetailRow + .mappingDetailRow {
+    margin-top: 1rem;
+}
+
+.fieldRow {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.fieldHeader {
+    margin-top: 1rem;
+}
+
+.rowItem {
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.rowSelect {
+    width: 100%;
+}
+
+.mappingTable {
+    margin-top: 2rem;
+}
+
+.mapIcon {
+    margin: auto;
+}
+
+.removeIcon {
+    color: #c23934;
+    cursor: pointer;
+}
+
+.detailsAccordion {
+    width: 100%;
+}
+
+.detailsWrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.recordTypeSection {
+    border-bottom: var(--lwc-borderWidthThin,1px) solid var(--lwc-colorBorder,rgb(221, 219, 218));
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+
+.fieldsSection {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.mappingOperators {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.positiveContainer {
+    align-items: center;
+    color: #04844b;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+.negativeContainer {
+    align-items: center;
+    color: #c23934;
+    cursor: pointer;   
+    margin-right: 1rem;
+}
+
+.alignLeft {
+    align-self: start;
+}

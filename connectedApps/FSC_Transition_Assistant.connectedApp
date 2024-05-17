@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ravikumar.parasuram@salesforce.com</contactEmail>
+    <developerName>FSCTransition__FSC_Transition_Assistant</developerName>
+    <hasMobileDeviceProtection>false</hasMobileDeviceProtection>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/Salesforce/icon.png</iconUrl>
+    <label>FSC Transition Assistant</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Salesforce/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://localhost/callback</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9cHH2bfKACZY_XCSfaATAJyUS_EeyrAW8ZGDUjfo987C1A1ALuwH_ZNxvOpYX7wbOtZzKXhNjisfQVw7V</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <version>1.0</version>
+</ConnectedApp>

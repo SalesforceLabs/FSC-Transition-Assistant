@@ -1,0 +1,11 @@
+.sectionContainer {
+    padding: 0rem 2rem;
+}
+
+.stillScanningContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    width: 100%;
+}
